@@ -1,0 +1,120 @@
+{
+  "development_plan": {
+    "date": "2026-10-16",
+    "original_baselines_date": "2026-10-13",
+    "version": 2,
+    "target": "aki_label",
+    "scope": "Original three primary-outcome baselines plus structured + chief-complaint LR",
+    "split": "Person 2 frozen patient split, seed 90089; no new split",
+    "preprocessing": "Person 2 fitted lr_structured and lr_text, unchanged",
+    "prevalence": "DummyClassifier(strategy='prior'); training encounter prevalence",
+    "age_gender": {
+      "features": [
+        "num__age",
+        "cat__gender_M"
+      ],
+      "penalty": null,
+      "tuning": "none",
+      "reference": "female (gender in training/validation is restricted to F or M)"
+    },
+    "structured": {
+      "penalty": "l2",
+      "C_grid": [
+        0.001,
+        0.01,
+        0.1,
+        1.0,
+        10.0,
+        100.0
+      ]
+    },
+    "structured_text": {
+      "penalty": "l2",
+      "C_grid": [
+        0.001,
+        0.01,
+        0.1,
+        1.0,
+        10.0,
+        100.0
+      ],
+      "preprocessor": "lr_text",
+      "features": 2799,
+      "text_terms": 2772,
+      "solver": "lbfgs",
+      "max_iter": 20000,
+      "tol": 1e-08,
+      "numerical_revision": "Initial C=100 fit reached 5,000 iterations without convergence; limit increased to 20,000 for all final text fits; C grid and AP rule unchanged",
+      "search_expansion": "none; fixed before inspecting text-LR tuning results"
+    },
+    "optimizer": {
+      "solver": "lbfgs",
+      "max_iter": 2000,
+      "tol": 1e-08
+    },
+    "selection": "Maximum validation average precision; ties within 1e-12 choose smaller C",
+    "selection_metric_status": "Provisional Person 3 development choice; Person 5 agreement pending",
+    "supporting_metrics": [
+      "AUROC",
+      "Brier score",
+      "quantile calibration curve"
+    ],
+    "weighting": "No class weighting, patient weighting or resampling",
+    "threshold": "Pending team agreement; no threshold metrics or threshold selected",
+    "calibration": "Assessment only; no probability recalibration fitted",
+    "final_fitting": "Training only; no train+validation refit",
+    "test": "No test outcomes, predictors, matrices or predictions read/generated",
+    "final_team_freeze": "Pending Persons 4 and 5 coordination",
+    "secondary_and_sensitivity": "Stage >=2 and sensitivity analyses remain outside this handoff scope",
+    "xgboost_correction": "Person 4 responsibility; no XGBoost-specific sparse-zero change applied to LR"
+  },
+  "selected_structured_C": 10.0,
+  "selected_text_C": 0.1,
+  "text_representation": {
+    "preprocessor": "Person 2 lr_text, unchanged",
+    "text_terms": 2772,
+    "total_features": 2799,
+    "matches_tree_text_vocabulary_and_idf": true
+  },
+  "text_matrix_numerical_reproduction": {
+    "train": {
+      "max_abs_difference": 2.220446049250313e-16,
+      "atol": 1e-14
+    },
+    "validation": {
+      "max_abs_difference": 2.220446049250313e-16,
+      "atol": 1e-14
+    }
+  },
+  "train_encounters": 79364,
+  "validation_encounters": 16932,
+  "training_prevalence": 0.0698805503754851,
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "pandas": "2.3.3",
+    "scipy": "1.16.3",
+    "scikit-learn": "1.7.2",
+    "joblib": "1.5.2"
+  },
+  "source_sha256": {
+    "person2_handoff/person2_split_preprocessing/outputs/split_manifest.csv": "68b50c1add0af9aa15d3cefff6fe612d93aa27930cfa49bcddf778b20a879e6e",
+    "person2_handoff/person2_split_preprocessing/outputs/preprocessors/lr_structured.joblib": "fe5ccb90159077786ea6da99f44097b1ac32ea2ce29366729acb3f6d2d98de10",
+    "person2_handoff/person2_split_preprocessing/outputs/preprocessors/lr_structured_feature_names.csv": "3b5a2894814640662208df43f37fae53b8e45bf60ebf1b944010a27d7ff1b78a",
+    "person2_handoff/person2_split_preprocessing/aki_preprocessing.py": "66649293edba96a1bf3ecd3fb3d67f86d12603e643ffc489ed7e49677a3050b3",
+    "aki_handoff/predictor_columns.csv": "f4ad3dc9c2fbc4edc19a715d6e35a25cf83a6ace2deeddbb8fc0a853a07f7780",
+    "person2_handoff/person2_split_preprocessing/outputs/preprocessors/lr_text.joblib": "b2575bd28db0f590c732cda08d2a62eda43ac898f77579a65ae1c45f93066e1d",
+    "person2_handoff/person2_split_preprocessing/outputs/preprocessors/lr_text_feature_names.csv": "ff69d810d2d0d0d575c2a22735e3a6854fb080185544259d4bd8c58fc5b90778",
+    "person2_handoff/person2_split_preprocessing/outputs/matrices/labels_train.csv": "ac6c76b9a711587bf2e36bd67df1bbed9746867e85901d8eecc92d88785024a4",
+    "person2_handoff/person2_split_preprocessing/outputs/matrices/X_raw_train.csv": "e173dfa70b6e1d5c0ced3c6f9960157bfb9bcfbb4d40553cc1270f8b75b5fd9b",
+    "person2_handoff/person2_split_preprocessing/outputs/matrices/lr_structured_train.npy": "b2bde39a1b7d8bc844508ec0db51ed8a0d04ae90a5bd864834eb15470ae2d4de",
+    "person2_handoff/person2_split_preprocessing/outputs/matrices/lr_text_train.npz": "ae1b426f949af96bf81bb502e2cd784c1e466d8b6b7e0f0dcd1b668550abb72d",
+    "person2_handoff/person2_split_preprocessing/outputs/matrices/labels_validation.csv": "002715962bfc6ed94b74ac468e2611b5c9daf345ed0c2198f13a75f844837a47",
+    "person2_handoff/person2_split_preprocessing/outputs/matrices/X_raw_validation.csv": "a0d4e3e5efd800321997cdb3483af46bbb351dcd409f1085dd45c8af1646cc98",
+    "person2_handoff/person2_split_preprocessing/outputs/matrices/lr_structured_validation.npy": "434a0799f9dd1ed953a9fe05385213d8a9022b10da903753d86575b1949c162f",
+    "person2_handoff/person2_split_preprocessing/outputs/matrices/lr_text_validation.npz": "dab9751632de81bc26388e9f0398e9f85f4e0edd644c5921f74f87201d80c50a",
+    "person2_handoff/person2_split_preprocessing/outputs/preprocessors/tree_text.joblib": "30887cdecd8f87306e19116e6230606639b62a5f9e8d7208decc931e711c32fe"
+  },
+  "test_evaluation": "pending; no test data opened by Person 3 code",
+  "prediction_schema_status": "Snake-case names for the seven fields requested by the team methodology; Person 5 can rename if needed"
+}

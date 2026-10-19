@@ -1,0 +1,4 @@
+﻿group,encounters,% of positives,patients (not additive),"hours to first qualifying sample, median [IQR]","first-sample delay h, median [IQR]","current samples, median [IQR]",single current sample,stage 1,stage 2,stage 3,stage ≥2
+Already positive at first sample,2627,33.4%,2361,0.8 [0.4–1.6],0.8 [0.4–1.6],2.0 [2.0–3.0],384 (14.6%),"1,795 (68.3%)",466 (17.7%),366 (13.9%),832 (31.7%)
+"Assessable, no rise at first sample, later positive",725,9.2%,702,15.6 [11.4–19.2],0.9 [0.4–1.8],3.0 [2.0–3.0],0 (0.0%),578 (79.7%),44 (6.1%),103 (14.2%),147 (20.3%)
+"Unassessable at first sample, later positive",4514,57.4%,4270,14.8 [10.3–19.0],0.6 [0.3–1.3],3.0 [2.0–4.0],0 (0.0%),"3,239 (71.8%)",210 (4.7%),"1,065 (23.6%)","1,275 (28.2%)"

@@ -1,0 +1,14 @@
+,missing_count,missing_percent
+age,0,0.0
+gender,0,0.0
+arrival_transport,0,0.0
+temperature,11909,10.53
+heartrate,9430,8.34
+resprate,10645,9.41
+o2sat,10712,9.47
+sbp,9685,8.56
+dbp,10067,8.9
+acuity,3759,3.32
+pain_numeric,18089,15.99
+pain_status,0,0.0
+chiefcomplaint,7,0.01

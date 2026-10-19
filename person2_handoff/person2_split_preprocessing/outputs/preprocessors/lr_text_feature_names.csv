@@ -1,0 +1,2800 @@
+feature
+num__age
+num__temperature
+num__heartrate
+num__resprate
+num__o2sat
+num__sbp
+num__dbp
+num__acuity
+num__pain_numeric
+miss__missingindicator_temperature
+miss__missingindicator_heartrate
+miss__missingindicator_resprate
+miss__missingindicator_o2sat
+miss__missingindicator_sbp
+miss__missingindicator_dbp
+miss__missingindicator_acuity
+miss__missingindicator_pain_numeric
+cat__gender_F
+cat__gender_M
+cat__arrival_transport_AMBULANCE
+cat__arrival_transport_HELICOPTER
+cat__arrival_transport_OTHER
+cat__arrival_transport_UNKNOWN
+cat__arrival_transport_WALK IN
+cat__pain_status_missing
+cat__pain_status_numeric
+cat__pain_status_other_recorded
+text__1
+text__10
+text__15
+text__2
+text__2 weeks
+text__20
+text__20 ft
+text__24
+text__3
+text__5
+text__8
+text__a
+text__a fib
+text__aaa
+text__aaa abd
+text__aaa transfer
+text__abcess
+text__abd
+text__abd cramping
+text__abd distention
+text__abd pain
+text__abd pain/diarrhea
+text__abd pain/fever
+text__abd pain/n/v
+text__abd pain/vomiting
+text__abdo
+text__abdo pain
+text__abdominal
+text__abdominal discomfort
+text__abdominal distention
+text__abdominal mass/distention
+text__abdominal pain
+text__abn
+text__abn labs
+text__abnl
+text__abnl ct
+text__abnl ekg
+text__abnl labs
+text__abnl mri
+text__abnml
+text__abnml labs
+text__abnomal
+text__abnormal
+text__abnormal ct
+text__abnormal cxr
+text__abnormal echo
+text__abnormal ekg
+text__abnormal lab
+text__abnormal labs
+text__abnormal mri
+text__abnormal sodium
+text__abnormal stress
+text__abnormal ultrasound
+text__abnormal xray
+text__abscess
+text__abscess fever
+text__abscess r
+text__abscess rectal
+text__abscess transfer
+text__abscess wound
+text__accident
+text__accident transfer
+text__aches
+text__aches cough
+text__aches fever
+text__activity
+text__acute
+text__acute cholangitis
+text__acute renal
+text__admission
+text__admit
+text__af
+text__afib
+text__after
+text__aggressive
+text__agitation
+text__agitation altered
+text__ah
+text__aicd
+text__aicd firing
+text__air
+text__airway
+text__alcohol
+text__alcohol withdrawal
+text__all
+text__all over
+text__allergic
+text__allergic reaction
+text__allergic rxn
+text__alt
+text__alt ms
+text__altered
+text__altered level
+text__altered m/s
+text__altered mental
+text__altered ms
+text__ambulate
+text__ambulate transfer
+text__ambulate weakness
+text__ambulating
+text__ams
+text__and
+text__and abd
+text__and back
+text__and chills
+text__and dizzy
+text__and fall
+text__and low
+text__and redness
+text__and/or
+text__and/or nausea
+text__anemia
+text__anemia abnormal
+text__anemia brbpr
+text__anemia chest
+text__anemia dizziness
+text__anemia dyspnea
+text__anemia fatigue
+text__anemia gi
+text__anemia hypotension
+text__anemia l
+text__anemia melena
+text__anemia n/v
+text__anemia s/p
+text__anemia transfer
+text__anemia weakness
+text__aneurysm
+text__aneurysm transfer
+text__angina
+text__angioedema
+text__ankle
+text__ankle fx
+text__ankle injury
+text__ankle pain
+text__ankle swelling
+text__anorexia
+text__anorexia weakness
+text__anxiety
+text__anxiety chest
+text__aortic
+text__aortic aneurysm
+text__aortic dissection
+text__aphasia
+text__aphasia transfer
+text__appendicitis
+text__appendicitis rlq
+text__appendicitis transfer
+text__appetite
+text__appy
+text__arf
+text__arm
+text__arm cellulitis
+text__arm dvt
+text__arm fracture
+text__arm fx
+text__arm injury
+text__arm laceration
+text__arm numbness
+text__arm pain
+text__arm redness
+text__arm swelling
+text__arm tingling
+text__arm weakness
+text__arm/leg
+text__around
+text__arrest
+text__arrest transfer
+text__arrythmia
+text__arterial
+text__arterial occlusion
+text__artery
+text__artery dissection
+text__ascites
+text__ascites dyspnea
+text__ascites transfer
+text__aspiration
+text__assault
+text__assault transfer
+text__asthma
+text__asthma exacerbation
+text__at
+text__at home
+text__ataxia
+text__atrial
+text__atrial fibrillation
+text__attempt
+text__av
+text__axillary
+text__axillary pain
+text__b
+text__b arm
+text__b flank
+text__b foot
+text__b hand
+text__b knee
+text__b leg
+text__b pedal
+text__b/l
+text__back
+text__back and
+text__back pain
+text__back/spine
+text__back/spine injury
+text__bacteremia
+text__basic
+text__basic trauma
+text__beat
+text__behavior
+text__behaviour
+text__bicycle
+text__bicycle accident
+text__bicyclist
+text__bicyclist struck
+text__bike
+text__bike accident
+text__bil
+text__bil leg
+text__bilat
+text__bilat foot
+text__bilat le
+text__bilat leg
+text__bilat lower
+text__bilat sdh
+text__bilateral
+text__bilateral le
+text__bilateral leg
+text__biliary
+text__bite
+text__bizarre
+text__bizarre behavior
+text__black
+text__black stool
+text__black stools
+text__black tarry
+text__bladder
+text__bladder pain
+text__bld
+text__ble
+text__ble edema
+text__bleed
+text__bleed hematemesis
+text__bleed hypotension
+text__bleed transfer
+text__bleeding
+text__bleeding fistula
+text__bleeding from
+text__bleeding transfer
+text__bloating
+text__block
+text__blocked
+text__blood
+text__blood clot
+text__blood culture
+text__blood cultures
+text__blood in
+text__blood pressure
+text__blood sugar
+text__blood transfusion
+text__bloody
+text__bloody stools
+text__blurred
+text__blurred vision
+text__blurry
+text__blurry vision
+text__body
+text__body aches
+text__body pain
+text__body sensation
+text__body swelling
+text__bodyaches
+text__bolus
+text__bolus transfer
+text__bowel
+text__bowel obstruction
+text__bp
+text__bpr
+text__brady
+text__bradycardia
+text__bradycardia chest
+text__bradycardia dizziness
+text__bradycardia dyspnea
+text__bradycardia hypotension
+text__bradycardia lethargy
+text__bradycardia syncope
+text__bradycardia transfer
+text__bradycardia weakness
+text__brain
+text__brain mass
+text__brbpr
+text__brbpr abd
+text__brbpr anemia
+text__brbpr chest
+text__brbpr diarrhea
+text__brbpr dizziness
+text__brbpr dyspnea
+text__brbpr etoh
+text__brbpr fever
+text__brbpr gi
+text__brbpr hematemesis
+text__brbpr hypotension
+text__brbpr lightheaded
+text__brbpr llq
+text__brbpr lower
+text__brbpr nausea
+text__brbpr rectal
+text__brbpr s/p
+text__brbpr syncope
+text__brbpr tachycardia
+text__brbpr transfer
+text__brbpr weakness
+text__breast
+text__breast pain
+text__breath
+text__breathing
+text__bruising
+text__bs
+text__burn
+text__burning
+text__buttock
+text__buttock pain
+text__by
+text__c
+text__c diff
+text__c spine
+text__c/o
+text__c/o s
+text__c/p
+text__c1
+text__c1 fracture
+text__c2
+text__c2 fx
+text__ca
+text__calf
+text__calf pain
+text__call
+text__call back
+text__car
+text__car vs
+text__cardiac
+text__cardiac arrest
+text__cardiac features
+text__carotid
+text__carotid artery
+text__cat
+text__cat bite
+text__catheter
+text__cbd
+text__cc
+text__cdiff
+text__cell
+text__cell crisis
+text__cellulitis
+text__cellulitis l
+text__cellulitis r
+text__cellulitis transfer
+text__cellulitis wound
+text__cerebellar
+text__change
+text__change in
+text__change ms
+text__changes
+text__changes headache
+text__changes transfer
+text__changes weakness
+text__check
+text__chemo
+text__chest
+text__chest pain
+text__chest pains
+text__chest pressure
+text__chest tightness
+text__chest wall
+text__chf
+text__chf exacerbation
+text__chills
+text__chills cough
+text__chills dysuria
+text__chills fever
+text__cholangitis
+text__cholangitis transfer
+text__chole
+text__cholecystitis
+text__cholecystitis transfer
+text__cirrhosis
+text__clearance
+text__clogged
+text__clogged foley
+text__clot
+text__clotted
+text__clotted fistula
+text__code
+text__code stroke
+text__coffee
+text__coffee ground
+text__cold
+text__cold foot
+text__cold right
+text__colitis
+text__colitis flare
+text__colonoscopy
+text__colostomy
+text__combative
+text__complaints
+text__complete
+text__complete heart
+text__complications
+text__compression
+text__concern
+text__concern for
+text__confused
+text__confusion
+text__confusion abnormal
+text__confusion altered
+text__confusion back
+text__confusion cough
+text__confusion diarrhea
+text__confusion dizziness
+text__confusion dyspnea
+text__confusion fatigue
+text__confusion fever
+text__confusion headache
+text__confusion hepatic
+text__confusion hyperglycemia
+text__confusion jaundice
+text__confusion l
+text__confusion lethargy
+text__confusion r
+text__confusion s/p
+text__confusion sdh
+text__confusion seizure
+text__confusion slurred
+text__confusion transfer
+text__confusion unsteady
+text__confusion weakness
+text__congestion
+text__consciousness
+text__constipation
+text__constipation abd
+text__constipation n/v
+text__constipation nausea
+text__constipation weakness
+text__consult
+text__copd
+text__cord
+text__cord compression
+text__cough
+text__cough chest
+text__cough diarrhea
+text__cough difficulty
+text__cough dyspnea
+text__cough fatigue
+text__cough fever
+text__cough hemoptysis
+text__cough hypotension
+text__cough hypoxia
+text__cough ili
+text__cough leg
+text__cough lethargy
+text__cough malaise
+text__cough n/v
+text__cough nausea
+text__cough pneumonia
+text__cough r
+text__cough s/p
+text__cough sob
+text__cough sore
+text__cough tachycardia
+text__cough transfer
+text__cough vomiting
+text__cough weakness
+text__cough wheezing
+text__cough/congestion
+text__cough/fever
+text__cough/sob
+text__coughing
+text__cp
+text__cp sob
+text__cp/sob
+text__cramping
+text__cramps
+text__crash
+text__creat
+text__creatinine
+text__crisis
+text__critical
+text__critical/mvc
+text__crohns
+text__crush
+text__crush injury
+text__ct
+text__ct abnormal
+text__ct altered
+text__ct back
+text__ct cough
+text__ct dizziness
+text__ct dyspnea
+text__ct fever
+text__ct headache
+text__ct jaundice
+text__ct l
+text__ct neck
+text__ct r
+text__ct rlq
+text__ct s/p
+text__ct scan
+text__ct transfer
+text__culture
+text__cultures
+text__cva
+text__cva transfer
+text__cx
+text__cxr
+text__cyst
+text__d
+text__d dimer
+text__dark
+text__dark stool
+text__days
+text__decreased
+text__decreased po
+text__defib
+text__deficit
+text__dehydrated
+text__dehydration
+text__dehydration fever
+text__dehydration weakness
+text__delta
+text__delta ms
+text__delusion
+text__dental
+text__dental pain
+text__depression
+text__depression etoh
+text__depression si
+text__depression/suicidal/deliberate
+text__depression/suicidal/deliberate self
+text__detox
+text__device
+text__device problem
+text__diahrrea
+text__dialysis
+text__diaphoresis
+text__diarhea
+text__diarrhea
+text__diarrhea abd
+text__diarrhea abnormal
+text__diarrhea and
+text__diarrhea brbpr
+text__diarrhea dizziness
+text__diarrhea dyspnea
+text__diarrhea failure
+text__diarrhea fatigue
+text__diarrhea fever
+text__diarrhea hypotension
+text__diarrhea lethargy
+text__diarrhea lower
+text__diarrhea melena
+text__diarrhea n/v
+text__diarrhea nausea
+text__diarrhea s/p
+text__diarrhea syncope
+text__diarrhea tachycardia
+text__diarrhea transfer
+text__diarrhea vomiting
+text__diarrhea weakness
+text__diff
+text__difficulty
+text__difficulty ambulating
+text__difficulty breathing
+text__difficulty speaking
+text__difficulty swallowing
+text__dimer
+text__diplopia
+text__discoloration
+text__discolored
+text__discomfort
+text__disection
+text__dislocation
+text__dislodged
+text__disorder
+text__dissection
+text__dissection transfer
+text__distended
+text__distention
+text__distention abd
+text__distention abnormal
+text__distention altered
+text__distention ascites
+text__distention b
+text__distention brbpr
+text__distention chest
+text__distention confusion
+text__distention constipation
+text__distention cough
+text__distention dyspnea
+text__distention fever
+text__distention jaundice
+text__distention leg
+text__distention n/v
+text__distention nausea
+text__distention transfer
+text__distention vomiting
+text__distention wound
+text__distress
+text__distress transfer
+text__disturbance
+text__disturbance/ataxia
+text__diverticulitis
+text__diverticulitis transfer
+text__dizziness
+text__dizziness abd
+text__dizziness abnormal
+text__dizziness back
+text__dizziness bradycardia
+text__dizziness chest
+text__dizziness confusion
+text__dizziness cough
+text__dizziness diarrhea
+text__dizziness dyspnea
+text__dizziness fatigue
+text__dizziness fever
+text__dizziness headache
+text__dizziness hyperglycemia
+text__dizziness hypertension
+text__dizziness hypotension
+text__dizziness l
+text__dizziness lethargy
+text__dizziness lightheaded
+text__dizziness melena
+text__dizziness n/v
+text__dizziness n/v/d
+text__dizziness nausea
+text__dizziness palpitations
+text__dizziness presyncope
+text__dizziness r
+text__dizziness s/p
+text__dizziness slurred
+text__dizziness syncope
+text__dizziness tachycardia
+text__dizziness transfer
+text__dizziness unsteady
+text__dizziness vision
+text__dizziness visual
+text__dizziness vomiting
+text__dizziness weakness
+text__dizzy
+text__dka
+text__dka hyperglycemia
+text__dka transfer
+text__doe
+text__dog
+text__dog bite
+text__double
+text__double vision
+text__down
+text__down s/p
+text__down stairs
+text__down transfer
+text__drain
+text__drain eval
+text__drainage
+text__droop
+text__droop l
+text__droop slurred
+text__droop transfer
+text__droop weakness
+text__drowning
+text__drug
+text__drug withdrawal
+text__dvt
+text__dvt dyspnea
+text__dvt l
+text__dvt pe
+text__dvt s
+text__dvt transfer
+text__dysarthria
+text__dysphagia
+text__dyspnea
+text__dyspnea abd
+text__dyspnea abdominal
+text__dyspnea abnormal
+text__dyspnea altered
+text__dyspnea anemia
+text__dyspnea anxiety
+text__dyspnea asthma
+text__dyspnea atrial
+text__dyspnea b
+text__dyspnea back
+text__dyspnea bradycardia
+text__dyspnea chest
+text__dyspnea confusion
+text__dyspnea cough
+text__dyspnea diarrhea
+text__dyspnea difficulty
+text__dyspnea dizziness
+text__dyspnea dyspnea
+text__dyspnea elevated
+text__dyspnea epigastric
+text__dyspnea etoh
+text__dyspnea failure
+text__dyspnea fatigue
+text__dyspnea fever
+text__dyspnea headache
+text__dyspnea hematemesis
+text__dyspnea hematuria
+text__dyspnea hemoptysis
+text__dyspnea hyperglycemia
+text__dyspnea hyperkalemia
+text__dyspnea hypotension
+text__dyspnea hypoxia
+text__dyspnea ili
+text__dyspnea jaundice
+text__dyspnea l
+text__dyspnea leg
+text__dyspnea lethargy
+text__dyspnea lightheaded
+text__dyspnea lower
+text__dyspnea melena
+text__dyspnea n/v
+text__dyspnea n/v/d
+text__dyspnea nausea
+text__dyspnea nstemi
+text__dyspnea on
+text__dyspnea palpitations
+text__dyspnea pe
+text__dyspnea pedal
+text__dyspnea pneumonia
+text__dyspnea pneumothorax
+text__dyspnea presyncope
+text__dyspnea productive
+text__dyspnea r
+text__dyspnea respiratory
+text__dyspnea s/p
+text__dyspnea shoulder
+text__dyspnea sore
+text__dyspnea syncope
+text__dyspnea tachycardia
+text__dyspnea tachypnea
+text__dyspnea transfer
+text__dyspnea vomiting
+text__dyspnea weakness
+text__dyspnea weight
+text__dyspnea wheezing
+text__dyspnea wound
+text__dysuria
+text__dysuria confusion
+text__dysuria fever
+text__dysuria flank
+text__dysuria hematuria
+text__dysuria l
+text__dysuria lower
+text__dysuria r
+text__dysuria urinary
+text__dysuria weakness
+text__e
+text__ear
+text__ear pain
+text__eating
+text__eating disorder
+text__ecchymosis
+text__echo
+text__edema
+text__effusion
+text__effusion transfer
+text__effusions
+text__ekg
+text__ekg abnormal
+text__ekg changes
+text__ekg chest
+text__ekg dizziness
+text__ekg dyspnea
+text__ekg syncope
+text__ekg transfer
+text__ekg weakness
+text__elbow
+text__elbow fracture
+text__elbow fx
+text__elbow pain
+text__elev
+text__elevated
+text__elevated blood
+text__elevated bs
+text__elevated creat
+text__elevated creatinine
+text__elevated d
+text__elevated inr
+text__elevated lft
+text__elevated lfts
+text__elevated trop
+text__elevated troponin
+text__elevated wbc
+text__emboli
+text__embolism
+text__embolus
+text__emesis
+text__emesis transfer
+text__encephalopathy
+text__encephalopathy transfer
+text__endocarditis
+text__endoscopy
+text__epidural
+text__epidural abscess
+text__epigastric
+text__epigastric pain
+text__epilepticus
+text__episode
+text__episodes
+text__epistaxis
+text__epistaxis transfer
+text__ercp
+text__erythema
+text__esophageal
+text__esophagus
+text__etoh
+text__etoh abd
+text__etoh altered
+text__etoh detox
+text__etoh hallucinations
+text__etoh head
+text__etoh hematemesis
+text__etoh hyperglycemia
+text__etoh l
+text__etoh s/p
+text__etoh seizure
+text__etoh si
+text__etoh transfer
+text__etoh unable
+text__etoh weakness
+text__etoh withdrawal
+text__etoh withdrawl
+text__eu
+text__eu critical
+text__eu critical/mvc
+text__eval
+text__eval abd
+text__eval fever
+text__eval l
+text__eval r
+text__eval transfer
+text__eval wound
+text__evaluation
+text__exacerbation
+text__exacerbation chest
+text__exacerbation cough
+text__exacerbation dyspnea
+text__exacerbation ili
+text__exertion
+text__exertion chest
+text__exertion cough
+text__exertion elevated
+text__exertion fatigue
+text__exertion fever
+text__exertion hypoxia
+text__exertion leg
+text__exertion palpitations
+text__exertion pe
+text__exertion pedal
+text__exertion r
+text__exertion tachycardia
+text__exertion transfer
+text__exertion weakness
+text__extremity
+text__extremity edema
+text__extremity injury
+text__extremity pain
+text__extremity redness
+text__extremity swelling
+text__extremity weakness
+text__extremity weakness/symptoms
+text__eye
+text__eye eval
+text__eye pain
+text__eye redness
+text__eye swelling
+text__face
+text__facial
+text__facial cellulitis
+text__facial droop
+text__facial injury
+text__facial numbness
+text__facial pain
+text__facial swelling
+text__facial trauma
+text__failed
+text__failed stress
+text__failure
+text__failure to
+text__failure transfer
+text__fall
+text__fall 15
+text__fall abnormal
+text__fall altered
+text__fall back
+text__fall c
+text__fall c2
+text__fall chest
+text__fall confusion
+text__fall dizziness
+text__fall dyspnea
+text__fall etoh
+text__fall facial
+text__fall femur
+text__fall fever
+text__fall from
+text__fall head
+text__fall headache
+text__fall hip
+text__fall hypotension
+text__fall ich
+text__fall knee
+text__fall l
+text__fall laceration
+text__fall left
+text__fall leg
+text__fall neck
+text__fall pelvic
+text__fall pneumothorax
+text__fall r
+text__fall rib
+text__fall right
+text__fall sah
+text__fall sdh
+text__fall seizure
+text__fall slurred
+text__fall syncope
+text__fall t
+text__fall tachycardia
+text__fall transfer
+text__fall unable
+text__fall unsteady
+text__fall vomiting
+text__fall weakness
+text__fall wound
+text__falls
+text__fatigue
+text__fatigue dyspnea
+text__fatigue fever
+text__fatigue headache
+text__fatigue ili
+text__fatigue n/v
+text__fatigue nausea
+text__fatigue weakness
+text__fb
+text__features
+text__fecal
+text__fecal incontinence
+text__feeding
+text__feeding tube
+text__feel
+text__feeling
+text__feeling unwell
+text__feeling well
+text__feels
+text__feels unwell
+text__feet
+text__femoral
+text__femur
+text__femur fracture
+text__femur fx
+text__fever
+text__fever abd
+text__fever abdominal
+text__fever abnormal
+text__fever altered
+text__fever and
+text__fever anemia
+text__fever back
+text__fever body
+text__fever chemo
+text__fever chest
+text__fever chills
+text__fever confusion
+text__fever cough
+text__fever diarrhea
+text__fever dizziness
+text__fever dyspnea
+text__fever dysuria
+text__fever elevated
+text__fever fatigue
+text__fever flank
+text__fever foot
+text__fever ha
+text__fever headache
+text__fever hematemesis
+text__fever hematuria
+text__fever hemoptysis
+text__fever hyperglycemia
+text__fever hypotension
+text__fever hypoxia
+text__fever ili
+text__fever jaundice
+text__fever l
+text__fever leg
+text__fever lethargy
+text__fever lightheaded
+text__fever llq
+text__fever lower
+text__fever malaise
+text__fever melena
+text__fever myalgia
+text__fever n/v
+text__fever n/v/d
+text__fever nausea
+text__fever neck
+text__fever neutropenia
+text__fever on
+text__fever pneumonia
+text__fever positive
+text__fever post
+text__fever productive
+text__fever r
+text__fever r/o
+text__fever rash
+text__fever rectal
+text__fever right
+text__fever rlq
+text__fever ruq
+text__fever s/p
+text__fever seizure
+text__fever sore
+text__fever tachycardia
+text__fever toe
+text__fever transfer
+text__fever urinary
+text__fever uti
+text__fever vomiting
+text__fever weakness
+text__fever wound
+text__fever/abd
+text__fever/abd pain
+text__fever/chemo
+text__fever/chills
+text__fever/cough
+text__fever/neutropenia
+text__fever/sob
+text__fevers
+text__fib
+text__fibrillation
+text__fibrillation chest
+text__fibrillation dyspnea
+text__fibrillation palpitations
+text__fibrillation tachycardia
+text__fibrillation transfer
+text__finding
+text__finding difficulty
+text__finger
+text__finger infection
+text__finger injury
+text__finger pain
+text__finger swelling
+text__fired
+text__firing
+text__fistula
+text__fistula eval
+text__flank
+text__flank pain
+text__flare
+text__fluid
+text__fluid overload
+text__foley
+text__foley insertion
+text__food
+text__food bolus
+text__foot
+text__foot cellulitis
+text__foot eval
+text__foot infection
+text__foot injury
+text__foot numbness
+text__foot pain
+text__foot r
+text__foot redness
+text__foot swelling
+text__foot transfer
+text__foot ulcer
+text__foot wound
+text__for
+text__for admission
+text__for admit
+text__for ercp
+text__for eval
+text__foreign
+text__foreign body
+text__found
+text__found down
+text__fracture
+text__fracture l
+text__fracture s/p
+text__fracture transfer
+text__fractures
+text__free
+text__free air
+text__freq
+text__frequency
+text__frequent
+text__frequent falls
+text__from
+text__from standing
+text__frontal
+text__ft
+text__ft fall
+text__ftt
+text__function
+text__fx
+text__fx s/p
+text__fx transfer
+text__g
+text__g tube
+text__gain
+text__gait
+text__gait disturbance/ataxia
+text__gait transfer
+text__gait weakness
+text__gallbladder
+text__gallstone
+text__gallstones
+text__gangrene
+text__gastroparesis
+text__gen
+text__gen weakness
+text__general
+text__general malaise
+text__general weakness
+text__generalized
+text__generalized weakness
+text__gi
+text__gi bleed
+text__gi bleeding
+text__gib
+text__gout
+text__graft
+text__great
+text__great toe
+text__groin
+text__groin pain
+text__ground
+text__ground emesis
+text__gsw
+text__gtube
+text__gtube eval
+text__gu
+text__gu eval
+text__gum
+text__gum bleeding
+text__gunshot
+text__gunshot wound
+text__h/a
+text__ha
+text__hallucinations
+text__hand
+text__hand infection
+text__hand injury
+text__hand laceration
+text__hand numbness
+text__hand pain
+text__hand swelling
+text__hand weakness
+text__hanging
+text__harm
+text__hct
+text__head
+text__head bleed
+text__head injury
+text__head lac
+text__head pain
+text__head strike
+text__headache
+text__headache abd
+text__headache abnormal
+text__headache chest
+text__headache confusion
+text__headache dizziness
+text__headache fever
+text__headache hyperglycemia
+text__headache hypertension
+text__headache ich
+text__headache ili
+text__headache l
+text__headache lethargy
+text__headache lightheaded
+text__headache lower
+text__headache n/v
+text__headache n/v/d
+text__headache nausea
+text__headache neck
+text__headache numbness
+text__headache r
+text__headache s/p
+text__headache sah
+text__headache sdh
+text__headache seizure
+text__headache slurred
+text__headache transfer
+text__headache unsteady
+text__headache visual
+text__headache vomiting
+text__headache weakness
+text__headbleed
+text__hearing
+text__heart
+text__heart beat
+text__heart block
+text__heart racing
+text__heart rate
+text__heaviness
+text__heel
+text__heel pain
+text__hematemesis
+text__hematemesis hypotension
+text__hematemesis melena
+text__hematemesis n/v
+text__hematemesis transfer
+text__hematemesis vomiting
+text__hematoma
+text__hematuria
+text__hematuria abd
+text__hematuria anemia
+text__hematuria dysuria
+text__hematuria fever
+text__hematuria hypotension
+text__hematuria l
+text__hematuria r
+text__hematuria s/p
+text__hematuria transfer
+text__hematuria urinary
+text__hematuria weakness
+text__hemetemesis
+text__hemodialysis
+text__hemoptysis
+text__hemoptysis chest
+text__hemoptysis dyspnea
+text__hemoptysis transfer
+text__hemorrhage
+text__hemothorax
+text__hepatic
+text__hepatic encephalopathy
+text__here
+text__here for
+text__hernia
+text__hi
+text__hiccups
+text__high
+text__high blood
+text__high inr
+text__high wbc
+text__hip
+text__hip dislocation
+text__hip fracture
+text__hip fx
+text__hip injury
+text__hip pain
+text__hold
+text__home
+text__horse
+text__hot
+text__hot and
+text__hr
+text__htn
+text__humerus
+text__humerus fracture
+text__hydrocephalus
+text__hypercalcemia
+text__hyperglycemia
+text__hyperglycemia abd
+text__hyperglycemia abnormal
+text__hyperglycemia dizziness
+text__hyperglycemia dka
+text__hyperglycemia hypertension
+text__hyperglycemia l
+text__hyperglycemia lethargy
+text__hyperglycemia n/v
+text__hyperglycemia n/v/d
+text__hyperglycemia nausea
+text__hyperglycemia r
+text__hyperglycemia tachycardia
+text__hyperglycemia transfer
+text__hyperglycemia visual
+text__hyperglycemia vomiting
+text__hyperglycemia weakness
+text__hyperglycemia wound
+text__hyperkalemia
+text__hyperkalemia abnormal
+text__hyperkalemia transfer
+text__hyperkalemia weakness
+text__hypertension
+text__hypertension abnormal
+text__hypertension headache
+text__hypertension l
+text__hypertension transfer
+text__hypoglycemi
+text__hypoglycemia
+text__hypoglycemia altered
+text__hypoglycemia seizure
+text__hypoglycemia syncope
+text__hypoglycemia transfer
+text__hypoglycemia weakness
+text__hypoglycemic
+text__hypokalemia
+text__hypokalemia transfer
+text__hyponatremia
+text__hypotension
+text__hypotension bradycardia
+text__hypotension dizziness
+text__hypotension dyspnea
+text__hypotension fever
+text__hypotension hypoxia
+text__hypotension ili
+text__hypotension l
+text__hypotension lethargy
+text__hypotension lightheaded
+text__hypotension n/v
+text__hypotension n/v/d
+text__hypotension pneumonia
+text__hypotension presyncope
+text__hypotension s/p
+text__hypotension syncope
+text__hypotension tachycardia
+text__hypotension transfer
+text__hypotension vomiting
+text__hypotension weakness
+text__hypotensive
+text__hypothermia
+text__hypoxia
+text__hypoxia altered
+text__hypoxia dyspnea
+text__hypoxia l
+text__hypoxia leg
+text__hypoxia lethargy
+text__hypoxia pe
+text__hypoxia pneumonia
+text__hypoxia respiratory
+text__hypoxia s/p
+text__hypoxia seizure
+text__hypoxia tachycardia
+text__hypoxia transfer
+text__hypoxia weakness
+text__hypoxic
+text__i
+text__icd
+text__icd eval
+text__ich
+text__ich intubated
+text__ich r
+text__ich s/p
+text__ich seizure
+text__ich transfer
+text__ili
+text__ili chest
+text__ili cough
+text__ili dyspnea
+text__ili fever
+text__ili n/v
+text__ili n/v/d
+text__ili nausea
+text__ili productive
+text__ili sore
+text__ili syncope
+text__ili tachycardia
+text__ili transfer
+text__ili weakness
+text__ili wheezing
+text__illness
+text__impaction
+text__in
+text__in mental
+text__in ms
+text__in stool
+text__in stool/melena
+text__inability
+text__inability to
+text__inc
+text__incontinence
+text__increased
+text__increased confusion
+text__increasing
+text__infarct
+text__infected
+text__infection
+text__influenza
+text__influenza like
+text__infx
+text__ingestion
+text__inguinal
+text__inguinal pain
+text__inj
+text__injury
+text__injury l
+text__injury r
+text__injury s/p
+text__injury syncope
+text__injury transfer
+text__inr
+text__insertion
+text__insomnia
+text__intake
+text__intake weakness
+text__intermittent
+text__intracranial
+text__intracranial mass
+text__intubated
+text__intubated head
+text__intubated transfer
+text__iph
+text__iph transfer
+text__irregular
+text__irregular heart
+text__ischemic
+text__ischemic bowel
+text__issues
+text__j
+text__j tube
+text__jaundice
+text__jaundice abd
+text__jaundice abdominal
+text__jaundice abnormal
+text__jaundice leg
+text__jaundice n/v
+text__jaundice nausea
+text__jaundice ruq
+text__jaundice transfer
+text__jaundice weakness
+text__jaw
+text__jaw pain
+text__joint
+text__joint pain
+text__jtube
+text__jtube eval
+text__k
+text__kidney
+text__kidney stone
+text__knee
+text__knee injury
+text__knee pain
+text__knee swelling
+text__l
+text__l ankle
+text__l arm
+text__l breast
+text__l calf
+text__l chest
+text__l ear
+text__l elbow
+text__l eye
+text__l facial
+text__l femur
+text__l finger
+text__l flank
+text__l foot
+text__l groin
+text__l hand
+text__l hip
+text__l inguinal
+text__l knee
+text__l leg
+text__l lower
+text__l neck
+text__l numbness
+text__l pulseless
+text__l rib
+text__l shoulder
+text__l side
+text__l sided
+text__l spine
+text__l testicular
+text__l thigh
+text__l thumb
+text__l toe
+text__l upper
+text__l weakness
+text__l wrist
+text__lab
+text__lab values
+text__labor
+text__labs
+text__labs abd
+text__labs abnormal
+text__labs acute
+text__labs altered
+text__labs anemia
+text__labs b
+text__labs back
+text__labs brbpr
+text__labs chest
+text__labs confusion
+text__labs cough
+text__labs diarrhea
+text__labs dizziness
+text__labs dyspnea
+text__labs elevated
+text__labs epigastric
+text__labs fatigue
+text__labs fever
+text__labs gi
+text__labs headache
+text__labs hematuria
+text__labs hyperglycemia
+text__labs hyperkalemia
+text__labs hypotension
+text__labs jaundice
+text__labs l
+text__labs leg
+text__labs lethargy
+text__labs lightheaded
+text__labs melena
+text__labs n/v
+text__labs n/v/d
+text__labs pneumonia
+text__labs r
+text__labs rash
+text__labs ruq
+text__labs s/p
+text__labs transfer
+text__labs weakness
+text__labs wound
+text__lac
+text__lac s/p
+text__laceration
+text__laceration r
+text__laceration s/p
+text__laceration transfer
+text__lap
+text__large
+text__lbp
+text__le
+text__le edema
+text__le pain
+text__le swelling
+text__le weakness
+text__leak
+text__leaking
+text__left
+text__left ankle
+text__left arm
+text__left eye
+text__left facial
+text__left femur
+text__left flank
+text__left foot
+text__left groin
+text__left hand
+text__left hip
+text__left knee
+text__left leg
+text__left lower
+text__left shoulder
+text__left side
+text__left sided
+text__leg
+text__leg cellulitis
+text__leg dvt
+text__leg edema
+text__leg fx
+text__leg infection
+text__leg injury
+text__leg laceration
+text__leg numbness
+text__leg pain
+text__leg redness
+text__leg swelling
+text__leg weakness
+text__leg wound
+text__legs
+text__lesion
+text__lethargic
+text__lethargy
+text__lethargy confusion
+text__lethargy failure
+text__lethargy fever
+text__lethargy n/v
+text__lethargy nausea
+text__lethargy transfer
+text__lethargy uti
+text__lethargy vomiting
+text__lethargy weakness
+text__leukemia
+text__level
+text__level altered
+text__level dizziness
+text__level dyspnea
+text__level of
+text__level transfer
+text__level weakness
+text__lft
+text__lft s
+text__lfts
+text__lgib
+text__lightheaded
+text__lightheaded melena
+text__lightheaded n/v
+text__lightheaded nausea
+text__lightheaded palpitations
+text__lightheaded presyncope
+text__lightheaded transfer
+text__lightheaded weakness
+text__lightheadedness
+text__like
+text__like illness
+text__line
+text__line eval
+text__lip
+text__lip swelling
+text__liver
+text__liver failure
+text__liver lac
+text__lle
+text__lle cellulitis
+text__lle pain
+text__lle swelling
+text__llq
+text__llq abdominal
+text__llq pain
+text__loc
+text__loss
+text__loss of
+text__low
+text__low back
+text__low blood
+text__low bp
+text__low hct
+text__low platelets
+text__low sat
+text__low sats
+text__lower
+text__lower abd
+text__lower abdominal
+text__lower back
+text__lower extremity
+text__lower leg
+text__lt
+text__lue
+text__lung
+text__lung mass
+text__luq
+text__luq abd
+text__luq abdominal
+text__luq pain
+text__lvad
+text__m/s
+text__malaise
+text__malaise weakness
+text__malfunction
+text__mandibular
+text__mandibular fx
+text__mania
+text__mass
+text__mass transfer
+text__mass/distention
+text__mca
+text__mcc
+text__mci
+text__mech
+text__mech fall
+text__mechanical
+text__mechanical fall
+text__med
+text__medical
+text__medical device
+text__meds
+text__melena
+text__melena abd
+text__melena anemia
+text__melena dizziness
+text__melena dyspnea
+text__melena n/v
+text__melena nausea
+text__melena transfer
+text__melena weakness
+text__memory
+text__mental
+text__mental status
+text__mets
+text__mi
+text__mid
+text__mid abd
+text__misuse/intoxication
+text__motorcycle
+text__motorcycle accident
+text__mouth
+text__mouth pain
+text__mri
+text__mri back
+text__mri dizziness
+text__mri headache
+text__mri l
+text__mri lower
+text__mri r
+text__mri transfer
+text__ms
+text__ms change
+text__ms changes
+text__mult
+text__mult c/o
+text__multiple
+text__multiple c/o
+text__multiple complaints
+text__multiple falls
+text__muscle
+text__mva
+text__mvc
+text__mvc head
+text__mvc r
+text__mvc transfer
+text__mx
+text__myalgia
+text__myalgias
+text__n
+text__n v
+text__n/v
+text__n/v abd
+text__n/v abdominal
+text__n/v abnormal
+text__n/v and
+text__n/v chest
+text__n/v cough
+text__n/v diarrhea
+text__n/v dizziness
+text__n/v dyspnea
+text__n/v fever
+text__n/v headache
+text__n/v hyperglycemia
+text__n/v hypotension
+text__n/v lightheaded
+text__n/v pregnant
+text__n/v presyncope
+text__n/v r
+text__n/v right
+text__n/v ruq
+text__n/v s/p
+text__n/v sbo
+text__n/v syncope
+text__n/v tachycardia
+text__n/v transfer
+text__n/v vomiting
+text__n/v weakness
+text__n/v/abd
+text__n/v/abd pain
+text__n/v/d
+text__n/v/d abd
+text__n/v/d abnormal
+text__n/v/d dizziness
+text__n/v/d fever
+text__n/v/d hyperglycemia
+text__n/v/d hypotension
+text__n/v/d rlq
+text__n/v/d syncope
+text__n/v/d transfer
+text__n/v/d weakness
+text__nasal
+text__nausea
+text__nausea abd
+text__nausea diarrhea
+text__nausea headache
+text__nausea palpitations
+text__nausea r
+text__nausea ruq
+text__nausea s/p
+text__nausea transfer
+text__nausea vomiting
+text__nausea weakness
+text__nausea/vomiting
+text__near
+text__near syncopal
+text__near syncope
+text__neck
+text__neck and
+text__neck pain
+text__neck swelling
+text__neck swelling/pain
+text__necrotic
+text__needs
+text__needs ercp
+text__needs neuro
+text__nephrostomy
+text__nephrostomy tube
+text__neuro
+text__neuro deficit
+text__neuro eval
+text__neutropenia
+text__new
+text__new afib
+text__new brain
+text__new mass
+text__new onset
+text__ng
+text__ng tube
+text__no
+text__non
+text__noncardiac
+text__noncardiac features
+text__not
+text__not feeling
+text__nstemi
+text__nstemi transfer
+text__numbness
+text__numbness facial
+text__numbness headache
+text__numbness l
+text__numbness leg
+text__numbness r
+text__numbness slurred
+text__numbness transfer
+text__numbness visual
+text__numbness weakness
+text__nvd
+text__o
+text__o2
+text__obstruction
+text__obstruction transfer
+text__occlusion
+text__od
+text__of
+text__of breath
+text__of consciousness
+text__of cva
+text__off
+text__oliguria
+text__on
+text__on chemo
+text__on exertion
+text__onset
+text__op
+text__op fever
+text__open
+text__oral
+text__oral bleeding
+text__orthostatic
+text__osteomyelitis
+text__ostomy
+text__out
+text__output
+text__over
+text__overdose
+text__overdose ingestion
+text__overdose si
+text__overdose suicide
+text__overdose transfer
+text__overload
+text__p
+text__p e
+text__pacer
+text__pain
+text__pain aaa
+text__pain abd
+text__pain abdominal
+text__pain abnl
+text__pain abnormal
+text__pain abscess
+text__pain acute
+text__pain altered
+text__pain and
+text__pain anemia
+text__pain anorexia
+text__pain anxiety
+text__pain appendicitis
+text__pain arm
+text__pain ascites
+text__pain at
+text__pain b
+text__pain back
+text__pain body
+text__pain bowel
+text__pain bradycardia
+text__pain brbpr
+text__pain cardiac
+text__pain cellulitis
+text__pain chest
+text__pain chills
+text__pain cholecystitis
+text__pain coffee
+text__pain confusion
+text__pain constipation
+text__pain cough
+text__pain decreased
+text__pain dehydration
+text__pain diarrhea
+text__pain difficulty
+text__pain diverticulitis
+text__pain dizziness
+text__pain dyspnea
+text__pain dysuria
+text__pain elevated
+text__pain epigastric
+text__pain etoh
+text__pain facial
+text__pain failure
+text__pain fatigue
+text__pain fever
+text__pain flank
+text__pain foot
+text__pain gallstones
+text__pain gi
+text__pain gtube
+text__pain headache
+text__pain hematemesis
+text__pain hematuria
+text__pain hemoptysis
+text__pain hip
+text__pain hyperglycemia
+text__pain hyperkalemia
+text__pain hypertension
+text__pain hypokalemia
+text__pain hypotension
+text__pain hypoxia
+text__pain ili
+text__pain inguinal
+text__pain jaundice
+text__pain jaw
+text__pain l
+text__pain left
+text__pain leg
+text__pain lethargy
+text__pain lightheaded
+text__pain llq
+text__pain lower
+text__pain luq
+text__pain malaise
+text__pain melena
+text__pain mvc
+text__pain n
+text__pain n/v
+text__pain n/v/d
+text__pain nausea
+text__pain neck
+text__pain needs
+text__pain noncardiac
+text__pain nstemi
+text__pain numbness
+text__pain palpitations
+text__pain pancreatitis
+text__pain pe
+text__pain pelvic
+text__pain pneumonia
+text__pain positive
+text__pain post
+text__pain pregnant
+text__pain presyncope
+text__pain productive
+text__pain pulseless
+text__pain r
+text__pain rash
+text__pain rectal
+text__pain rib
+text__pain right
+text__pain rlq
+text__pain ruq
+text__pain s/p
+text__pain sbo
+text__pain seizure
+text__pain shoulder
+text__pain si
+text__pain sickle
+text__pain sob
+text__pain sore
+text__pain stemi
+text__pain swelling
+text__pain syncope
+text__pain tachycardia
+text__pain toe
+text__pain transfer
+text__pain tremor
+text__pain unable
+text__pain upper
+text__pain urinary
+text__pain uti
+text__pain vaginal
+text__pain visual
+text__pain vomiting
+text__pain weakness
+text__pain weight
+text__pain with
+text__pain wound
+text__pain/back
+text__pain/back pain
+text__pain/diarrhea
+text__pain/fever
+text__pain/n/v
+text__pain/nausea
+text__pain/sob
+text__pain/swelling
+text__pain/vomiting
+text__pain/weakness
+text__pains
+text__pale
+text__pallor/anemia
+text__palpatations
+text__palpitations
+text__palpitations chest
+text__palpitations cough
+text__palpitations dizziness
+text__palpitations dyspnea
+text__palpitations syncope
+text__palpitations tachycardia
+text__palpitations transfer
+text__palpitations weakness
+text__palpitations/irregular
+text__palpitations/irregular heart
+text__palps
+text__pancreatic
+text__pancreatitis
+text__pancreatitis transfer
+text__paranoid
+text__paranoid delusion
+text__parietal
+text__passed
+text__passed out
+text__pe
+text__pe dyspnea
+text__pe s
+text__pe transfer
+text__ped
+text__ped struck
+text__pedal
+text__pedal edema
+text__pedestrian
+text__pedestrian struck
+text__peg
+text__pelvic
+text__pelvic fx
+text__pelvic pain
+text__penile
+text__penile pain
+text__perf
+text__perforated
+text__perforation
+text__pericardial
+text__pericardial effusion
+text__peritonsillar
+text__peritonsillar abscess
+text__periumbilical
+text__periumbilical pain
+text__picc
+text__picc line
+text__placement
+text__platelets
+text__pleural
+text__pleural effusion
+text__pleuritic
+text__pleuritic chest
+text__pna
+text__pneumonia
+text__pneumonia transfer
+text__pneumonia weakness
+text__pneumothorax
+text__pneumothorax transfer
+text__pnx
+text__po
+text__po intake
+text__pole
+text__polysubstance
+text__polyuria
+text__port
+text__portal
+text__portal vein
+text__positive
+text__positive blood
+text__post
+text__post arrest
+text__post op
+text__potassium
+text__pre
+text__pre syncope
+text__pregnant
+text__pressure
+text__presyncope
+text__presyncope dyspnea
+text__presyncope s/p
+text__presyncope transfer
+text__presyncope weakness
+text__priapism
+text__problem
+text__productive
+text__productive cough
+text__psych
+text__psych eval
+text__psychiatric
+text__psychiatric hold
+text__psychosis
+text__pulled
+text__pulm
+text__pulmonary
+text__pulmonary emboli
+text__pulmonary embolism
+text__pulseless
+text__pulseless foot
+text__r
+text__r abd
+text__r ankle
+text__r arm
+text__r back
+text__r breast
+text__r calf
+text__r carotid
+text__r chest
+text__r ear
+text__r elbow
+text__r eye
+text__r facial
+text__r femur
+text__r flank
+text__r foot
+text__r groin
+text__r hand
+text__r hip
+text__r inguinal
+text__r knee
+text__r leg
+text__r neck
+text__r numbness
+text__r pleural
+text__r pulseless
+text__r rib
+text__r shoulder
+text__r side
+text__r sided
+text__r thigh
+text__r thumb
+text__r toe
+text__r weakness
+text__r wrist
+text__r/o
+text__r/o cva
+text__r/o dvt
+text__r/o gi
+text__r/o gib
+text__r/o infection
+text__r/o pe
+text__r/o pneumonia
+text__r/o sepsis
+text__r/o stemi
+text__r/o stroke
+text__r/o tia
+text__racing
+text__raf
+text__rapid
+text__rapid afib
+text__rash
+text__rash allergic
+text__rash fever
+text__rash transfer
+text__rate
+text__reaction
+text__reaction rash
+text__reaction transfer
+text__rectal
+text__rectal bleed
+text__rectal bleeding
+text__rectal pain
+text__redness
+text__redness l
+text__redness r
+text__redness wound
+text__redness/swelling
+text__removal
+text__renal
+text__renal failure
+text__requesting
+text__requesting detox
+text__resolved
+text__resp
+text__resp arrest
+text__resp distress
+text__resp failure
+text__respiratory
+text__respiratory distress
+text__retention
+text__retention hematuria
+text__retention transfer
+text__retroperitoneal
+text__retroperitoneal bleed
+text__rhabdo
+text__rib
+text__rib fracture
+text__rib pain
+text__right
+text__right arm
+text__right elbow
+text__right eye
+text__right facial
+text__right flank
+text__right foot
+text__right hand
+text__right hip
+text__right knee
+text__right leg
+text__right lower
+text__right side
+text__right sided
+text__right toe
+text__rigors
+text__rle
+text__rle cellulitis
+text__rle pain
+text__rle swelling
+text__rll
+text__rlq
+text__rlq abd
+text__rlq abdominal
+text__rlq pain
+text__rp
+text__rp bleed
+text__rt
+text__rue
+text__rupture
+text__ruq
+text__ruq abd
+text__ruq abdominal
+text__ruq pain
+text__rxn
+text__s
+text__s flare
+text__s/p
+text__s/p arrest
+text__s/p assault
+text__s/p cardiac
+text__s/p chemo
+text__s/p colonoscopy
+text__s/p cp
+text__s/p fall
+text__s/p hypotension
+text__s/p liver
+text__s/p mechanical
+text__s/p mvc
+text__s/p seizure
+text__s/p syncopal
+text__s/p syncope
+text__s/p sz
+text__s/p tpa
+text__s/p unresponsive
+text__s/p unwitnessed
+text__s/s
+text__sa
+text__sah
+text__sah sdh
+text__sah transfer
+text__sat
+text__sats
+text__sbo
+text__sbo transfer
+text__scan
+text__scrotal
+text__scrotal pain
+text__scrotal swelling
+text__sdh
+text__sdh s/p
+text__sdh syncope
+text__sdh transfer
+text__seizure
+text__seizure altered
+text__seizure confusion
+text__seizure s/p
+text__seizure syncope
+text__seizure transfer
+text__seizure unresponsive
+text__seizures
+text__self
+text__self harm
+text__sensation
+text__sent
+text__sent for
+text__sepsis
+text__sepsis transfer
+text__septic
+text__shaking
+text__shingles
+text__short
+text__short of
+text__shortness
+text__shortness of
+text__shoulder
+text__shoulder injury
+text__shoulder pain
+text__shunt
+text__si
+text__si depression
+text__si etoh
+text__si hi
+text__si hyperglycemia
+text__si overdose
+text__si transfer
+text__sickle
+text__sickle cell
+text__side
+text__side pain
+text__side weakness
+text__sided
+text__sided abd
+text__sided abdominal
+text__sided chest
+text__sided facial
+text__sided numbness
+text__sided pain
+text__sided weakness
+text__since
+text__sinus
+text__sinus pain
+text__site
+text__skin
+text__skull
+text__skull fx
+text__slurred
+text__slurred speech
+text__sob
+text__sob cough
+text__sob cp
+text__sob with
+text__sob/abd
+text__sob/cough
+text__sob/cp
+text__social
+text__sodium
+text__sodium level
+text__sore
+text__sore throat
+text__sores
+text__spasms
+text__speaking
+text__speech
+text__speech difficulty
+text__speech facial
+text__speech l
+text__speech r
+text__speech transfer
+text__speech unsteady
+text__speech visual
+text__speech weakness
+text__spinal
+text__spine
+text__spine fracture
+text__splenic
+text__splenic lac
+text__splenic laceration
+text__sscp
+text__st
+text__stab
+text__stab wound
+text__stabbing
+text__stairs
+text__standing
+text__stat
+text__status
+text__status abd
+text__status abnormal
+text__status aphasia
+text__status bradycardia
+text__status changes
+text__status chest
+text__status confusion
+text__status cough
+text__status cva
+text__status dizziness
+text__status dyspnea
+text__status epilepticus
+text__status etoh
+text__status facial
+text__status failure
+text__status fever
+text__status found
+text__status hallucinations
+text__status head
+text__status headache
+text__status hyperglycemia
+text__status hypoglycemia
+text__status hypotension
+text__status hypothermia
+text__status hypoxia
+text__status ich
+text__status jaundice
+text__status l
+text__status lethargy
+text__status n/v
+text__status overdose
+text__status r
+text__status respiratory
+text__status s/p
+text__status sdh
+text__status seizure
+text__status slurred
+text__status substance
+text__status syncope
+text__status tachycardia
+text__status transfer
+text__status tremor
+text__status unable
+text__status unresponsive
+text__status vomiting
+text__status weakness
+text__stemi
+text__stemi transfer
+text__sternal
+text__stiffness
+text__stone
+text__stone transfer
+text__stones
+text__stool
+text__stool/melena
+text__stools
+text__stress
+text__stress test
+text__strike
+text__stroke
+text__struck
+text__struck transfer
+text__subdural
+text__substance
+text__substance misuse/intoxication
+text__substance use
+text__sugar
+text__suicide
+text__suicide attempt
+text__suprapubic
+text__suprapubic pain
+text__surg
+text__surgery
+text__surgical
+text__surgical site
+text__svt
+text__sw
+text__swallow
+text__swallowing
+text__swallowing sore
+text__swallowing transfer
+text__swelling
+text__swelling abdominal
+text__swelling abnormal
+text__swelling and
+text__swelling cellulitis
+text__swelling chest
+text__swelling dvt
+text__swelling dyspnea
+text__swelling fever
+text__swelling hypotension
+text__swelling l
+text__swelling left
+text__swelling leg
+text__swelling n/v
+text__swelling r
+text__swelling rash
+text__swelling redness
+text__swelling s/p
+text__swelling transfer
+text__swelling weakness
+text__swelling wound
+text__swelling/pain
+text__swelling/redness
+text__swollen
+text__sx
+text__sycope
+text__sync
+text__syncopal
+text__syncopal episode
+text__syncopal episodes
+text__syncope
+text__syncope altered
+text__syncope chest
+text__syncope dizziness
+text__syncope fever
+text__syncope head
+text__syncope hypotension
+text__syncope l
+text__syncope n/v
+text__syncope palpitations
+text__syncope s/p
+text__syncope transfer
+text__syncope vomiting
+text__syncope weakness
+text__syncope/presyncope
+text__sz
+text__t
+text__t spine
+text__tach
+text__tachy
+text__tachycardia
+text__tachycardia dyspnea
+text__tachycardia fever
+text__tachycardia hypoxia
+text__tachycardia transfer
+text__tachycardia weakness
+text__tachycardic
+text__tachypnea
+text__tarry
+text__tarry stools
+text__test
+text__testicular
+text__testicular pain
+text__testicular swelling
+text__thigh
+text__thigh pain
+text__thoracic
+text__thrive
+text__thrive lethargy
+text__thrive n/v
+text__thrive s/p
+text__thrive transfer
+text__thrive weakness
+text__throat
+text__throat fever
+text__throat foreign
+text__throat transfer
+text__thrombocytopenia
+text__thrombosis
+text__thumb
+text__thumb injury
+text__thumb pain
+text__tia
+text__tia transfer
+text__tib/fib
+text__tib/fib fracture
+text__tib/fib fx
+text__tibial
+text__tightness
+text__tingling
+text__to
+text__to ambulate
+text__to thrive
+text__to void
+text__to walk
+text__toe
+text__toe infection
+text__toe pain
+text__toe redness
+text__toes
+text__tongue
+text__tongue swelling
+text__tpa
+text__trach
+text__trach eval
+text__transfer
+text__transfer abd
+text__transfer abnormal
+text__transfer acute
+text__transfer altered
+text__transfer anemia
+text__transfer atrial
+text__transfer c2
+text__transfer chest
+text__transfer confusion
+text__transfer cva
+text__transfer dizziness
+text__transfer dyspnea
+text__transfer elevated
+text__transfer fever
+text__transfer gi
+text__transfer head
+text__transfer headache
+text__transfer hypotension
+text__transfer ich
+text__transfer jaundice
+text__transfer l
+text__transfer leg
+text__transfer mvc
+text__transfer n/v
+text__transfer neck
+text__transfer nstemi
+text__transfer palpitations
+text__transfer pancreatitis
+text__transfer pe
+text__transfer pneumonia
+text__transfer r
+text__transfer rib
+text__transfer ruq
+text__transfer s/p
+text__transfer sah
+text__transfer sbo
+text__transfer sdh
+text__transfer seizure
+text__transfer transfer
+text__transfer weakness
+text__transfer wound
+text__transfusion
+text__transfusion reaction
+text__transplant
+text__trauma
+text__trauma transfer
+text__traumatic
+text__traumatic arrest
+text__traumatic back/spine
+text__tree
+text__tremor
+text__tremors
+text__tremulous
+text__trip
+text__trip and
+text__trop
+text__troponin
+text__troponin nstemi
+text__troponin transfer
+text__tube
+text__tube eval
+text__tumor
+text__twitching
+text__tx
+text__tylenol
+text__tylenol od
+text__ulcer
+text__ulcers
+text__ultrasound
+text__unable
+text__unable to
+text__unknown
+text__unknown cc
+text__unresponsive
+text__unresponsive episode
+text__unresponsive transfer
+text__unstable
+text__unsteady
+text__unsteady gait
+text__unwell
+text__unwitnessed
+text__unwitnessed fall
+text__up
+text__upper
+text__upper abdominal
+text__upper back
+text__upper extremity
+text__upper gi
+text__urgency
+text__uri
+text__urinary
+text__urinary frequency
+text__urinary incontinence
+text__urinary retention
+text__urination
+text__urine
+text__urosepsis
+text__urosepsis transfer
+text__us
+text__use
+text__uti
+text__uti complaints
+text__uti transfer
+text__v
+text__v d
+text__v tach
+text__vag
+text__vag bleeding
+text__vaginal
+text__vaginal bleeding
+text__vaginal pain
+text__values
+text__vascular
+text__vascular eval
+text__vein
+text__vein thrombosis
+text__vertebral
+text__vertigo
+text__vh
+text__vision
+text__vision changes
+text__vision loss
+text__visual
+text__visual changes
+text__visual disturbance
+text__void
+text__volvulus
+text__vomiting
+text__vomiting abd
+text__vomiting abdominal
+text__vomiting and/or
+text__vomiting blood
+text__vomiting diarrhea
+text__vomiting dizziness
+text__vomiting fever
+text__vomiting headache
+text__vomiting lightheaded
+text__vomiting nausea
+text__vomiting transfer
+text__vomiting weakness
+text__vomiting/diarrhea
+text__vomitting
+text__vs
+text__vs tree
+text__vt
+text__vtach
+text__vtach transfer
+text__w
+text__walk
+text__wall
+text__wbc
+text__wbc fever
+text__wbc transfer
+text__weak
+text__weak and
+text__weakness
+text__weakness abd
+text__weakness abnormal
+text__weakness altered
+text__weakness and
+text__weakness anemia
+text__weakness back
+text__weakness body
+text__weakness chest
+text__weakness confusion
+text__weakness constipation
+text__weakness cough
+text__weakness diarrhea
+text__weakness dizziness
+text__weakness dyspnea
+text__weakness failure
+text__weakness fatigue
+text__weakness fever
+text__weakness headache
+text__weakness hyperglycemia
+text__weakness hypoglycemia
+text__weakness hypotension
+text__weakness jaundice
+text__weakness l
+text__weakness leg
+text__weakness lethargy
+text__weakness lightheaded
+text__weakness lower
+text__weakness melena
+text__weakness n/v
+text__weakness nausea
+text__weakness numbness
+text__weakness pain
+text__weakness palpitations
+text__weakness presyncope
+text__weakness productive
+text__weakness r
+text__weakness s/p
+text__weakness slurred
+text__weakness syncope
+text__weakness tachycardia
+text__weakness transfer
+text__weakness unable
+text__weakness unsteady
+text__weakness urinary
+text__weakness vomiting
+text__weakness weakness
+text__weakness wound
+text__weakness/numbness
+text__weakness/symptoms
+text__weakness/symptoms of
+text__week
+text__weeks
+text__weight
+text__weight gain
+text__weight loss
+text__well
+text__wheezing
+text__with
+text__with exertion
+text__with n/v
+text__withdrawal
+text__withdrawl
+text__witnessed
+text__word
+text__word finding
+text__work
+text__worsening
+text__wound
+text__wound check
+text__wound drainage
+text__wound eval
+text__wound infection
+text__wound infx
+text__wound transfer
+text__wounds
+text__wrist
+text__wrist injury
+text__wrist pain
+text__wt
+text__wt gain
+text__wt loss
+text__x
+text__x 1
+text__x 2
+text__x3
+text__xray
+text__xray l
+text__yesterday
+text__zoster

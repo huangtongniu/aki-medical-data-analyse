@@ -1,0 +1,23 @@
+{
+  "figures": [
+    "figure1_cohort_flow.pdf",
+    "figure1_cohort_flow.png",
+    "figure2_test_pr_roc.pdf",
+    "figure2_test_pr_roc.png",
+    "figure3_test_calibration.pdf",
+    "figure3_test_calibration.png",
+    "figure4_model_interpretation.pdf",
+    "figure4_model_interpretation.png",
+    "figure5_paired_model_differences.pdf",
+    "figure5_paired_model_differences.png",
+    "figure6_sensitivity_ap.pdf",
+    "figure6_sensitivity_ap.png",
+    "figureS1_text_lr_coefficients.pdf",
+    "figureS1_text_lr_coefficients.png"
+  ],
+  "reports": [
+    "report_draft.md",
+    "person5_work_summary_zh.md"
+  ],
+  "source": "frozen evaluation outputs"
+}

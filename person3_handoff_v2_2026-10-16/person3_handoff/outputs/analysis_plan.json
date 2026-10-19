@@ -1,0 +1,69 @@
+{
+  "date": "2026-10-16",
+  "original_baselines_date": "2026-10-13",
+  "version": 2,
+  "target": "aki_label",
+  "scope": "Original three primary-outcome baselines plus structured + chief-complaint LR",
+  "split": "Person 2 frozen patient split, seed 90089; no new split",
+  "preprocessing": "Person 2 fitted lr_structured and lr_text, unchanged",
+  "prevalence": "DummyClassifier(strategy='prior'); training encounter prevalence",
+  "age_gender": {
+    "features": [
+      "num__age",
+      "cat__gender_M"
+    ],
+    "penalty": null,
+    "tuning": "none",
+    "reference": "female (gender in training/validation is restricted to F or M)"
+  },
+  "structured": {
+    "penalty": "l2",
+    "C_grid": [
+      0.001,
+      0.01,
+      0.1,
+      1.0,
+      10.0,
+      100.0
+    ]
+  },
+  "structured_text": {
+    "penalty": "l2",
+    "C_grid": [
+      0.001,
+      0.01,
+      0.1,
+      1.0,
+      10.0,
+      100.0
+    ],
+    "preprocessor": "lr_text",
+    "features": 2799,
+    "text_terms": 2772,
+    "solver": "lbfgs",
+    "max_iter": 20000,
+    "tol": 1e-08,
+    "numerical_revision": "Initial C=100 fit reached 5,000 iterations without convergence; limit increased to 20,000 for all final text fits; C grid and AP rule unchanged",
+    "search_expansion": "none; fixed before inspecting text-LR tuning results"
+  },
+  "optimizer": {
+    "solver": "lbfgs",
+    "max_iter": 2000,
+    "tol": 1e-08
+  },
+  "selection": "Maximum validation average precision; ties within 1e-12 choose smaller C",
+  "selection_metric_status": "Provisional Person 3 development choice; Person 5 agreement pending",
+  "supporting_metrics": [
+    "AUROC",
+    "Brier score",
+    "quantile calibration curve"
+  ],
+  "weighting": "No class weighting, patient weighting or resampling",
+  "threshold": "Pending team agreement; no threshold metrics or threshold selected",
+  "calibration": "Assessment only; no probability recalibration fitted",
+  "final_fitting": "Training only; no train+validation refit",
+  "test": "No test outcomes, predictors, matrices or predictions read/generated",
+  "final_team_freeze": "Pending Persons 4 and 5 coordination",
+  "secondary_and_sensitivity": "Stage >=2 and sensitivity analyses remain outside this handoff scope",
+  "xgboost_correction": "Person 4 responsibility; no XGBoost-specific sparse-zero change applied to LR"
+}

@@ -1,0 +1,4 @@
+__pycache__/
+outputs/predictions/
+outputs/checks/bootstrap_*
+outputs/tables/bootstrap_*_replicates.csv

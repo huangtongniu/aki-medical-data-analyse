@@ -1,0 +1,25 @@
+{
+  "age_gender_xgboost": {
+    "n_estimators": 400,
+    "max_depth": 3,
+    "learning_rate": 0.03,
+    "subsample": 0.8,
+    "colsample_bytree": 0.8
+  },
+  "structured_xgboost": {
+    "n_estimators": 400,
+    "max_depth": 3,
+    "learning_rate": 0.03,
+    "subsample": 0.8,
+    "colsample_bytree": 0.8
+  },
+  "structured_chief_complaint_xgboost": {
+    "n_estimators": 300,
+    "max_depth": 3,
+    "learning_rate": 0.05,
+    "subsample": 0.8,
+    "colsample_bytree": 0.8
+  },
+  "selection_metric": "average_precision",
+  "test_data_used": false
+}

@@ -1,0 +1,8 @@
+﻿subset,encounters,patients,primary positives,primary prevalence,stage ≥2 positives,stage ≥2 prevalence
+All labelled,113097,66090,7866,6.96%,2254,1.99%
+S1_has_any_vital,104274,60224,6673,6.40%,1945,1.87%
+S2_complete_case,89902,54183,5510,6.13%,1611,1.79%
+S3_excl_positive_at_first_sample,110470,65592,5239,4.74%,1422,1.29%
+S4_two_or_more_samples,112713,66005,7482,6.64%,2197,1.95%
+S5_dense_negatives,80751,50083,7866,9.74%,2254,2.79%
+S6_full_24h_followup,106710,62741,7501,7.03%,2172,2.04%

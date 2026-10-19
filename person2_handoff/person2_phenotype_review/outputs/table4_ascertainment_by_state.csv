@@ -1,0 +1,20 @@
+﻿measure,"Primary positive (N=7,866)","Operational negative (N=105,231)","Indeterminate (N=72,171)","No usable creatinine (N=10,072)"
+"Current samples, median [IQR]",3.0 [2.0–3.0],2.0 [2.0–2.0],1.0 [1.0–1.0],0.0 [0.0–0.0]
+Current samples = 0,0 (0.0%),0 (0.0%),0 (0.0%),"10,072 (100.0%)"
+Current samples = 1,384 (4.9%),0 (0.0%),"72,171 (100.0%)",0 (0.0%)
+Current samples = 2,"3,274 (41.6%)","84,492 (80.3%)",0 (0.0%),0 (0.0%)
+Current samples = 3,"2,316 (29.4%)","15,699 (14.9%)",0 (0.0%),0 (0.0%)
+Current samples = ≥4,"1,892 (24.1%)","5,040 (4.8%)",0 (0.0%),0 (0.0%)
+"First-sample delay from arrival, h",0.7 [0.4–1.5],0.8 [0.4–1.7],1.2 [0.6–2.6],–
+"Sampling span (first to last sample), h",16.8 [12.5–20.0],14.8 [11.1–18.2],0.0 [0.0–0.0],–
+Sampling span < 6 h (among ≥2 samples),176 (2.4%),"4,376 (4.2%)",–,–
+Sampling span 6–<12 h (among ≥2 samples),"1,222 (16.3%)","27,970 (26.6%)",–,–
+Sampling span ≥ 12 h (among ≥2 samples),"6,084 (81.3%)","72,885 (69.3%)",–,–
+"Gap from last sample to endpoint, h",5.8 [2.9–9.6],7.5 [4.5–11.0],20.9 [13.7–23.0],–
+"Follow-up window, h",24.0 [24.0–24.0],24.0 [24.0–24.0],24.0 [18.2–24.0],14.2 [8.9–24.0]
+Full 24 h window,"7,501 (95.4%)","99,209 (94.3%)","44,196 (61.2%)","2,595 (25.8%)"
+First sample status: positive,"2,627 (33.4%)",0 (0.0%),0 (0.0%),0 (0.0%)
+First sample status: no qualifying rise,725 (9.2%),"16,033 (15.2%)","9,114 (12.6%)",0 (0.0%)
+First sample status: unassessable,"4,514 (57.4%)","89,198 (84.8%)","63,057 (87.4%)",0 (0.0%)
+First sample status: no current sample,0 (0.0%),0 (0.0%),0 (0.0%),"10,072 (100.0%)"
+Hours from arrival to first qualifying sample,10.7 [1.5–17.1],–,–,–

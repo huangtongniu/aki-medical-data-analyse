@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "date": "2026-10-16",
+  "fresh_directory_subprocess_predictions_equal": {
+    "prevalence": true,
+    "age_gender_lr": true,
+    "structured_lr": true,
+    "structured_text_lr": true
+  },
+  "validation_rows_checked_per_model": 16932,
+  "batch_128_max_abs_delta": {
+    "prevalence": 0.0,
+    "age_gender_lr": 0.0,
+    "structured_lr": 5.551115123125783e-17,
+    "structured_text_lr": 0.0
+  },
+  "batch_comparison_atol": 1e-14,
+  "archive_crc_check_passed": true,
+  "test_data_opened": false
+}

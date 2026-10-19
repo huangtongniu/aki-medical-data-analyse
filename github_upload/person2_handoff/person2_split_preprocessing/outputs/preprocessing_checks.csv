@@ -1,0 +1,11 @@
+﻿check,result
+Imputer medians == training medians,True
+Scaled training numeric means ≈ 0,True
+Scaler mean_ == training means after imputation,True
+Validation scaled means are not forced to 0 (transform only),True
+TF-IDF vocabulary == vocabulary refit on training text,True
+TF-IDF vocabulary differs from an all-data fit (so a leak would show),True
+Unseen category encodes to all zeros,True
+No identifier/outcome in any feature name,True
+No NaN in LR matrices,True
+Tree structured matrix keeps NaN for missing vitals,True
