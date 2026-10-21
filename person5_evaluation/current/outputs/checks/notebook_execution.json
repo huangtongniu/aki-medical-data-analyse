@@ -1,0 +1,34 @@
+{
+  "executed_at_utc": "2026-10-21T06:18:39.725290+00:00",
+  "notebook": "P5_primary_secondary_evaluation.ipynb",
+  "all_code_cells_passed": true,
+  "code_cells_executed": 7,
+  "environment": {
+    "python": "3.12.11",
+    "environment_name": "sml",
+    "packages": {
+      "numpy": "2.3.3",
+      "pandas": "2.3.3",
+      "scipy": "1.16.2",
+      "scikit-learn": "1.7.2",
+      "joblib": "1.5.2",
+      "xgboost": "3.1.2",
+      "matplotlib": "3.10.7",
+      "statsmodels": "0.14.6"
+    }
+  },
+  "execution_counts": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "embedded_png_figures": 4,
+  "method": "sequential cell execution in a fresh sml process using IPython InteractiveShell",
+  "jupyter_kernel_started": false,
+  "kernel_spec_installed_or_changed": false,
+  "reason": "Jupyter kernel startup blocked while creating a localhost socket pair; local IPython requires no kernel sockets."
+}

@@ -1,0 +1,32 @@
+{
+  "protocol_date": "2026-10-21",
+  "targets": ["aki_label", "aki_stage2_label"],
+  "sensitivity_target": 0.8,
+  "threshold_rule": "largest validation cutoff with sensitivity >= 0.80; probability >= cutoff; retain ties",
+  "bootstrap_replicates": 1000,
+  "bootstrap_seed": 9008905,
+  "confidence_level": 0.95,
+  "bootstrap_method": "stratified patient-cluster percentile bootstrap",
+  "bootstrap_strata": "patient maximum observed stage within the evaluated scope: operational negative, Stage 1 only, Stage >=2; retain each stratum's patient count",
+  "paired_sampling": "identical patient multiplicities for both outcomes and all fourteen models within each scope",
+  "probability_atol": 1e-7,
+  "ranking_metric_reproduction_atol": 1e-5,
+  "subsets": ["S1_has_any_vital", "S2_complete_case", "S3_excl_positive_at_first_sample", "S4_two_or_more_samples"],
+  "paired_comparisons": [
+    ["structured_text_lr", "structured_lr"],
+    ["structured_xgboost", "structured_lr"],
+    ["structured_chief_complaint_xgboost", "structured_xgboost"],
+    ["structured_chief_complaint_xgboost", "structured_text_lr"]
+  ],
+  "notes": [
+    "Primary models, predictions and cutoffs must reproduce the archived Person 5 evaluation; do not refit or tune.",
+    "Secondary models were developed after primary test results were available. This freeze precedes this secondary model evaluation, not all historical access to the shared test labels.",
+    "Use the same full cohort for both targets: Stage 1 is a secondary negative.",
+    "The user-confirmed 80% validation sensitivity rule is applied separately to each target; primary probability cutoffs are never reused for Stage >=2.",
+    "Version 1 used unstratified patient-cluster bootstrap. Version 2 explicitly implements the updated request for stratification; intervals may differ, and version 1 artifacts remain unchanged.",
+    "S3 is exactly the supplied primary-label-based P2 flag. Its application to the secondary endpoint removes some Stage 1 secondary negatives as well as Stage >=2 positives. It is not redefined as absence of Stage >=2 at first sample.",
+    "Intervals condition on fixed fitted models and validation cutoffs, and on patient counts in the three bootstrap strata. No multiplicity adjustment or formal p-value.",
+    "Main-test calibration parameters have bootstrap intervals; sensitivity subsets report calibration point estimates only. Undefined statistics are retained as missing and valid replicate counts are reported.",
+    "The validation numerical tolerance preserves the existing primary machine-precision tie audit. All probability and ranking discrepancies are recorded without rounding predictions."
+  ]
+}

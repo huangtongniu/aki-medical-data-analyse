@@ -1,0 +1,30 @@
+{
+  "verified_at_utc": "2026-10-21T06:19:24.467510+00:00",
+  "all_passed": true,
+  "top_level_work_folders": [
+    "person1_handoff",
+    "person2_handoff",
+    "person3_handoff",
+    "person4_handoff",
+    "person5_evaluation"
+  ],
+  "teammate_work_summaries": 5,
+  "protected_original_files_unchanged": 314,
+  "numerical_output_files_byte_identical": 38,
+  "original_freeze_and_test_start_unchanged": true,
+  "model_inference_comparisons": 28,
+  "maximum_prediction_difference": 0.0,
+  "notebook_code_cells_executed": 7,
+  "notebook_embedded_figures": 4,
+  "p5_independent_checks_passed": 2399,
+  "active_markdown_files_checked": 14,
+  "relative_links_checked": 130,
+  "current_artifact_hashes_verified": 81,
+  "models_refitted": false,
+  "thresholds_reselected": false,
+  "statistical_protocol_changed": false,
+  "path_only_frozen_code_amendments": [
+    "common.py",
+    "evaluate.py"
+  ]
+}

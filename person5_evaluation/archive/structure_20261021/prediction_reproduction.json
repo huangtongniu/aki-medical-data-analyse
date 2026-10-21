@@ -1,0 +1,181 @@
+{
+  "verified_at_utc": "2026-10-21T06:17:48.535812+00:00",
+  "all_passed": true,
+  "comparisons": [
+    {
+      "partition": "validation",
+      "target": "aki_label",
+      "model": "prevalence",
+      "max_abs_difference": 0.0
+    },
+    {
+      "partition": "validation",
+      "target": "aki_label",
+      "model": "age_gender_lr",
+      "max_abs_difference": 0.0
+    },
+    {
+      "partition": "validation",
+      "target": "aki_label",
+      "model": "structured_lr",
+      "max_abs_difference": 0.0
+    },
+    {
+      "partition": "validation",
+      "target": "aki_label",
+      "model": "structured_text_lr",
+      "max_abs_difference": 0.0
+    },
+    {
+      "partition": "validation",
+      "target": "aki_label",
+      "model": "age_gender_xgboost",
+      "max_abs_difference": 0.0
+    },
+    {
+      "partition": "validation",
+      "target": "aki_label",
+      "model": "structured_xgboost",
+      "max_abs_difference": 0.0
+    },
+    {
+      "partition": "validation",
+      "target": "aki_label",
+      "model": "structured_chief_complaint_xgboost",
+      "max_abs_difference": 0.0
+    },
+    {
+      "partition": "validation",
+      "target": "aki_stage2_label",
+      "model": "prevalence",
+      "max_abs_difference": 0.0
+    },
+    {
+      "partition": "validation",
+      "target": "aki_stage2_label",
+      "model": "age_gender_lr",
+      "max_abs_difference": 0.0
+    },
+    {
+      "partition": "validation",
+      "target": "aki_stage2_label",
+      "model": "structured_lr",
+      "max_abs_difference": 0.0
+    },
+    {
+      "partition": "validation",
+      "target": "aki_stage2_label",
+      "model": "structured_text_lr",
+      "max_abs_difference": 0.0
+    },
+    {
+      "partition": "validation",
+      "target": "aki_stage2_label",
+      "model": "age_gender_xgboost",
+      "max_abs_difference": 0.0
+    },
+    {
+      "partition": "validation",
+      "target": "aki_stage2_label",
+      "model": "structured_xgboost",
+      "max_abs_difference": 0.0
+    },
+    {
+      "partition": "validation",
+      "target": "aki_stage2_label",
+      "model": "structured_chief_complaint_xgboost",
+      "max_abs_difference": 0.0
+    },
+    {
+      "partition": "test",
+      "target": "aki_label",
+      "model": "prevalence",
+      "max_abs_difference": 0.0
+    },
+    {
+      "partition": "test",
+      "target": "aki_label",
+      "model": "age_gender_lr",
+      "max_abs_difference": 0.0
+    },
+    {
+      "partition": "test",
+      "target": "aki_label",
+      "model": "structured_lr",
+      "max_abs_difference": 0.0
+    },
+    {
+      "partition": "test",
+      "target": "aki_label",
+      "model": "structured_text_lr",
+      "max_abs_difference": 0.0
+    },
+    {
+      "partition": "test",
+      "target": "aki_label",
+      "model": "age_gender_xgboost",
+      "max_abs_difference": 0.0
+    },
+    {
+      "partition": "test",
+      "target": "aki_label",
+      "model": "structured_xgboost",
+      "max_abs_difference": 0.0
+    },
+    {
+      "partition": "test",
+      "target": "aki_label",
+      "model": "structured_chief_complaint_xgboost",
+      "max_abs_difference": 0.0
+    },
+    {
+      "partition": "test",
+      "target": "aki_stage2_label",
+      "model": "prevalence",
+      "max_abs_difference": 0.0
+    },
+    {
+      "partition": "test",
+      "target": "aki_stage2_label",
+      "model": "age_gender_lr",
+      "max_abs_difference": 0.0
+    },
+    {
+      "partition": "test",
+      "target": "aki_stage2_label",
+      "model": "structured_lr",
+      "max_abs_difference": 0.0
+    },
+    {
+      "partition": "test",
+      "target": "aki_stage2_label",
+      "model": "structured_text_lr",
+      "max_abs_difference": 0.0
+    },
+    {
+      "partition": "test",
+      "target": "aki_stage2_label",
+      "model": "age_gender_xgboost",
+      "max_abs_difference": 0.0
+    },
+    {
+      "partition": "test",
+      "target": "aki_stage2_label",
+      "model": "structured_xgboost",
+      "max_abs_difference": 0.0
+    },
+    {
+      "partition": "test",
+      "target": "aki_stage2_label",
+      "model": "structured_chief_complaint_xgboost",
+      "max_abs_difference": 0.0
+    }
+  ],
+  "secondary_provenance": {
+    "secondary_source_hashes_verified": 16,
+    "shared_text_vocabulary_and_idf": true,
+    "text_terms": 2772
+  },
+  "models_refitted": false,
+  "predictions_overwritten": false
+}

@@ -1,0 +1,29 @@
+{
+  "completed_at_utc": "2026-10-21T06:17:51.466833+00:00",
+  "targets": [
+    "aki_label",
+    "aki_stage2_label"
+  ],
+  "models_per_target": 7,
+  "bootstrap_replicates_per_scope": 1000,
+  "scopes": [
+    "test",
+    "S1_has_any_vital",
+    "S2_complete_case",
+    "S3_excl_positive_at_first_sample",
+    "S4_two_or_more_samples"
+  ],
+  "full_cohort": {
+    "encounters": 113097,
+    "patients": 66090,
+    "primary_positives": 7866,
+    "secondary_positives": 2254
+  },
+  "test_encounters": 16801,
+  "test_patients": 9914,
+  "original_files_verified_unchanged": 188,
+  "changed_original_files": [],
+  "model_refitting": false,
+  "test_used_for_threshold_selection": false,
+  "interval_change": "V2 uses the requested stratified patient bootstrap; archived V1 unstratified intervals are preserved."
+}

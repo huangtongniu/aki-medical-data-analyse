@@ -1,0 +1,146 @@
+{
+  "created_at_utc": "2026-10-21T05:29:24.125623+00:00",
+  "protocol": {
+    "protocol_date": "2026-10-21",
+    "targets": [
+      "aki_label",
+      "aki_stage2_label"
+    ],
+    "sensitivity_target": 0.8,
+    "threshold_rule": "largest validation cutoff with sensitivity >= 0.80; probability >= cutoff; retain ties",
+    "bootstrap_replicates": 1000,
+    "bootstrap_seed": 9008905,
+    "confidence_level": 0.95,
+    "bootstrap_method": "stratified patient-cluster percentile bootstrap",
+    "bootstrap_strata": "patient maximum observed stage within the evaluated scope: operational negative, Stage 1 only, Stage >=2; retain each stratum's patient count",
+    "paired_sampling": "identical patient multiplicities for both outcomes and all fourteen models within each scope",
+    "probability_atol": 1e-07,
+    "ranking_metric_reproduction_atol": 1e-05,
+    "subsets": [
+      "S1_has_any_vital",
+      "S2_complete_case",
+      "S3_excl_positive_at_first_sample",
+      "S4_two_or_more_samples"
+    ],
+    "paired_comparisons": [
+      [
+        "structured_text_lr",
+        "structured_lr"
+      ],
+      [
+        "structured_xgboost",
+        "structured_lr"
+      ],
+      [
+        "structured_chief_complaint_xgboost",
+        "structured_xgboost"
+      ],
+      [
+        "structured_chief_complaint_xgboost",
+        "structured_text_lr"
+      ]
+    ],
+    "notes": [
+      "Primary models, predictions and cutoffs must reproduce the archived Person 5 evaluation; do not refit or tune.",
+      "Secondary models were developed after primary test results were available. This freeze precedes this secondary model evaluation, not all historical access to the shared test labels.",
+      "Use the same full cohort for both targets: Stage 1 is a secondary negative.",
+      "The user-confirmed 80% validation sensitivity rule is applied separately to each target; primary probability cutoffs are never reused for Stage >=2.",
+      "Version 1 used unstratified patient-cluster bootstrap. Version 2 explicitly implements the updated request for stratification; intervals may differ, and version 1 artifacts remain unchanged.",
+      "S3 is exactly the supplied primary-label-based P2 flag. Its application to the secondary endpoint removes some Stage 1 secondary negatives as well as Stage >=2 positives. It is not redefined as absence of Stage >=2 at first sample.",
+      "Intervals condition on fixed fitted models and validation cutoffs, and on patient counts in the three bootstrap strata. No multiplicity adjustment or formal p-value.",
+      "Main-test calibration parameters have bootstrap intervals; sensitivity subsets report calibration point estimates only. Undefined statistics are retained as missing and valid replicate counts are reported.",
+      "The validation numerical tolerance preserves the existing primary machine-precision tie audit. All probability and ranking discrepancies are recorded without rounding predictions."
+    ]
+  },
+  "environment": {
+    "python": "3.12.11",
+    "environment_name": "sml",
+    "packages": {
+      "numpy": "2.3.3",
+      "pandas": "2.3.3",
+      "scipy": "1.16.2",
+      "scikit-learn": "1.7.2",
+      "joblib": "1.5.2",
+      "xgboost": "3.1.2",
+      "matplotlib": "3.10.7",
+      "statsmodels": "0.14.6"
+    }
+  },
+  "thresholds": {
+    "aki_label": {
+      "prevalence": 0.0698805503754851,
+      "age_gender_lr": 0.06082484047396971,
+      "structured_lr": 0.05248053180619296,
+      "structured_text_lr": 0.05164372956587114,
+      "age_gender_xgboost": 0.06163614243268967,
+      "structured_xgboost": 0.049853287637233734,
+      "structured_chief_complaint_xgboost": 0.05069334805011749
+    },
+    "aki_stage2_label": {
+      "prevalence": 0.02002167229474321,
+      "age_gender_lr": 0.015478413628699719,
+      "structured_lr": 0.01472721551975028,
+      "structured_text_lr": 0.01149735495749086,
+      "age_gender_xgboost": 0.0164949893951416,
+      "structured_xgboost": 0.013150502927601337,
+      "structured_chief_complaint_xgboost": 0.012984935194253922
+    }
+  },
+  "threshold_file_sha256": "ce67f855c058bd25dca1a42a12c16cb11d43956d92f693db6d8e15ecd1bf1c64",
+  "source_sha256": {
+    "person1_handoff/predictor_columns.csv": "f4ad3dc9c2fbc4edc19a715d6e35a25cf83a6ace2deeddbb8fc0a853a07f7780",
+    "person2_handoff/person2_phenotype_review/outputs/sensitivity_subset_flags.csv": "50dca3b291b3f6059ef3fd7b976a966cd0191b59a708fa754ed5a3617af61078",
+    "person2_handoff/person2_split_preprocessing/aki_preprocessing.py": "66649293edba96a1bf3ecd3fb3d67f86d12603e643ffc489ed7e49677a3050b3",
+    "person2_handoff/person2_split_preprocessing/outputs/matrices/labels_validation.csv": "002715962bfc6ed94b74ac468e2611b5c9daf345ed0c2198f13a75f844837a47",
+    "person2_handoff/person2_split_preprocessing/outputs/matrices/lr_structured_validation.npy": "434a0799f9dd1ed953a9fe05385213d8a9022b10da903753d86575b1949c162f",
+    "person2_handoff/person2_split_preprocessing/outputs/matrices/lr_text_validation.npz": "dab9751632de81bc26388e9f0398e9f85f4e0edd644c5921f74f87201d80c50a",
+    "person2_handoff/person2_split_preprocessing/outputs/matrices/tree_structured_validation.npy": "6c79409816e57d52cde618828cf0b769bef57666a28da45b31bdbae0f6b5e900",
+    "person2_handoff/person2_split_preprocessing/outputs/matrices/tree_text_validation.npz": "d6dcb79322abdebac41174855b461a9a849d976ad4fa5f06409c0d40940b9b4d",
+    "person2_handoff/person2_split_preprocessing/outputs/matrices/X_raw_validation.csv": "a0d4e3e5efd800321997cdb3483af46bbb351dcd409f1085dd45c8af1646cc98",
+    "person2_handoff/person2_split_preprocessing/outputs/preprocessors/lr_structured.joblib": "fe5ccb90159077786ea6da99f44097b1ac32ea2ce29366729acb3f6d2d98de10",
+    "person2_handoff/person2_split_preprocessing/outputs/preprocessors/lr_structured_feature_names.csv": "3b5a2894814640662208df43f37fae53b8e45bf60ebf1b944010a27d7ff1b78a",
+    "person2_handoff/person2_split_preprocessing/outputs/preprocessors/lr_text.joblib": "b2575bd28db0f590c732cda08d2a62eda43ac898f77579a65ae1c45f93066e1d",
+    "person2_handoff/person2_split_preprocessing/outputs/preprocessors/lr_text_feature_names.csv": "ff69d810d2d0d0d575c2a22735e3a6854fb080185544259d4bd8c58fc5b90778",
+    "person2_handoff/person2_split_preprocessing/outputs/preprocessors/tree_structured.joblib": "ad3247a58a28d7be906ea5b39c558f2d0da04f20582de8ea4ece6a6717c4d861",
+    "person2_handoff/person2_split_preprocessing/outputs/preprocessors/tree_structured_feature_names.csv": "332c3022e76e671775365c1e2f6228ae70ad19abb171acc956b17b2d017bd21d",
+    "person2_handoff/person2_split_preprocessing/outputs/preprocessors/tree_text.joblib": "30887cdecd8f87306e19116e6230606639b62a5f9e8d7208decc931e711c32fe",
+    "person2_handoff/person2_split_preprocessing/outputs/preprocessors/tree_text_feature_names.csv": "d5d212a40a7621976815cc1333f119498c1c5ad89d0025ebf8d06c977226be52",
+    "person2_handoff/person2_split_preprocessing/outputs/split_manifest.csv": "68b50c1add0af9aa15d3cefff6fe612d93aa27930cfa49bcddf778b20a879e6e",
+    "person3_stage2_handoff/person3_stage2_handoff/outputs/model_metadata.json": "6dccad9994f25d599d1407ab37326250f89998047b4dfa9fe0719bab816b79a6",
+    "person3_stage2_handoff/person3_stage2_handoff/outputs/models/age_gender_lr.joblib": "1fafb2eef587197b20c7711b268951522827e3ee37f72c80d3889048ad903875",
+    "person3_stage2_handoff/person3_stage2_handoff/outputs/models/prevalence.joblib": "f99873fbe57d45d2b0ba4821f49d8f27d0628925ccc16bcf1eb87dbc0e7e0bf5",
+    "person3_stage2_handoff/person3_stage2_handoff/outputs/models/structured_lr.joblib": "faf4b9ed4b919f1a9febd49343ae208acc6fc7147353f6316e68ba37c90ab337",
+    "person3_stage2_handoff/person3_stage2_handoff/outputs/models/structured_text_lr.joblib": "415e172c17573dea81be904df48dceba7cd72a1b17a147c1a165ec004a791cee",
+    "person3_stage2_handoff/person3_stage2_handoff/outputs/validation_metrics.csv": "003108c12e993bfc36c5b1d8253c61ae56f5f7159827bc7003b5406eea07af1b",
+    "person3_stage2_handoff/person3_stage2_handoff/outputs/validation_predictions.csv": "98dfe2b064a99e460ea8eb47e2a3cfdd82af166bbbedd8ce3cc0006f39acfafd",
+    "person4_handoff/person4_handoff/outputs/model_settings.json": "3e47266138ee63eedb78e0da59b1145942f8317ba4b6bed53eb0afbed8d7de58",
+    "person4_handoff/person4_handoff/outputs/models/age_gender_xgboost.joblib": "d98aae1bcbc324f9b14a7a13d3938abeffb1357d81f15e0fb5e4173e88481a2a",
+    "person4_handoff/person4_handoff/outputs/models/stage2_age_gender_xgboost.joblib": "286a7e086a22cd6da12259b0ad45837c453f6d0949cf02f42fe183e59fc2f3fc",
+    "person4_handoff/person4_handoff/outputs/models/stage2_structured_chief_complaint_xgboost.joblib": "e8ac21482109d6b3e3c98317a07edf7a4da27ae4ab9986151f144c8d7d6cfc92",
+    "person4_handoff/person4_handoff/outputs/models/stage2_structured_xgboost.joblib": "8a4835d29d5cd31b067fce20530a994741d22469f5beab2a0b93c1ead5a995ee",
+    "person4_handoff/person4_handoff/outputs/models/structured_chief_complaint_xgboost.joblib": "0a10e300147497f0fe630cb64f49132400d8342ef2778dd8e44962c96140dbdc",
+    "person4_handoff/person4_handoff/outputs/models/structured_xgboost.joblib": "8ebd09f670dfb266f40092c27a5d9427e6202ad1eef55455bb15d06bb44aeb06",
+    "person4_handoff/person4_handoff/outputs/stage2_model_settings.json": "d3acb4f9e79f39e575dca9426fbefb7353a96cd78f912d3faaa2491770d43239",
+    "person4_handoff/person4_handoff/outputs/stage2_validation_predictions.csv": "2ed09fc0f9558997ca9d8e8d61e93e8cf79ce7599630b7d729a3f281ff31d3df",
+    "person4_handoff/person4_handoff/outputs/validation_predictions.csv": "dc6290f659c3235cf758a39f526a3bb0667993842f3f4a71307a387afb23c721",
+    "person4_handoff/person4_handoff/P4_inference.py": "865bea12d0bf6922b9319af000185610e09e32fafb253529a18c79cdd124a676",
+    "person5_evaluation/outputs/checks/analysis_freeze.json": "882da3771a9f8b407867a90626e1a334511cf0bda9e76d639808c86167aefab8",
+    "person5_evaluation/outputs/predictions/validation_predictions_wide.csv": "9e3d8110920b104251132ea6d425c16f29c1a81436d18c9acafc03c246824261",
+    "person5_evaluation_v2/common.py": "8ede1d1f36fab1291090499279da80ba8ccd908df116928f76f2fff87f4348c9",
+    "person5_evaluation_v2/evaluate.py": "fa8cb5aea6092f6b4f42afd1ca7fb3037ce379fd20bc56d209db2e94690f7ee3",
+    "person5_evaluation_v2/inference.py": "f4979a4696e2c3e9356ff7ac8b9f1e6af14a970fcac599d37e0ac9ee320259cf",
+    "person5_evaluation_v2/inputs/person3_primary/person3_handoff/outputs/model_metadata.json": "fb9ad77b0bc405a6513206c0bd083a231cbfc7578d09a47afeafd4cbbdb08679",
+    "person5_evaluation_v2/inputs/person3_primary/person3_handoff/outputs/models/age_gender_lr.joblib": "d1566c5bd2a5bccfae5ec4f5a7b6e1953d8324fcc755cde0cedd98357f2d09b4",
+    "person5_evaluation_v2/inputs/person3_primary/person3_handoff/outputs/models/prevalence.joblib": "07e79ac21902ff19579d31e053666cfe577f0f71b881f29b733d929399cf9f31",
+    "person5_evaluation_v2/inputs/person3_primary/person3_handoff/outputs/models/structured_lr.joblib": "a844b8ecd99c44c65aa6f67733100656b8c2f8bf646a729f81d2bd5e7c6968f5",
+    "person5_evaluation_v2/inputs/person3_primary/person3_handoff/outputs/models/structured_text_lr.joblib": "d509aff65fb9854c86ef9da1a693f3d915b05314e3a303b5e10f7cdfe3b66e52",
+    "person5_evaluation_v2/inputs/person3_primary/person3_handoff/outputs/validation_metrics.csv": "c71b33b49b46bda31242680653a746dab41638440a3d7aa9f0842ddc561e9d14",
+    "person5_evaluation_v2/inputs/person3_primary/person3_handoff/outputs/validation_predictions.csv": "8da0ce81e62987364bee16e882d0ed886203017725954d46d9f269e559a656c8",
+    "person5_evaluation_v2/metrics.py": "f3663963c19ab90943cdf5bca59ce75b637de4758847958b8e532b4c3e9b079d",
+    "person5_evaluation_v2/settings.json": "f88e3d8909cea6c7cc5e31a81b3ebf4ac2f18cd1b13867efd0d589959493131b"
+  },
+  "validation_passed": true,
+  "primary_original_freeze_sha256": "882da3771a9f8b407867a90626e1a334511cf0bda9e76d639808c86167aefab8",
+  "chronology": "Primary evaluation already completed; this validation-only freeze precedes new secondary model test inference.",
+  "authorization": "User requested both outcomes on 2026-10-21; retain previously confirmed validation sensitivity >=0.80 rule."
+}

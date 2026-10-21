@@ -1,0 +1,127 @@
+{
+  "created_at_utc": "2026-10-19T01:16:14.250874+00:00",
+  "protocol": {
+    "protocol_date": "2026-10-19",
+    "target": "aki_label",
+    "threshold_rule": "largest validation cutoff with sensitivity >= target; probability >= cutoff; retain ties",
+    "sensitivity_target": 0.8,
+    "bootstrap_replicates": 1000,
+    "bootstrap_seed": 9008905,
+    "confidence_level": 0.95,
+    "bootstrap_unit": "subject_id; all encounters retained; identical resamples for every model",
+    "probability_atol": 1e-07,
+    "ranking_metric_reproduction_atol": 1e-05,
+    "subsets": [
+      "S1_has_any_vital",
+      "S2_complete_case",
+      "S3_excl_positive_at_first_sample",
+      "S4_two_or_more_samples"
+    ],
+    "paired_comparisons": [
+      [
+        "structured_text_lr",
+        "structured_lr"
+      ],
+      [
+        "structured_xgboost",
+        "structured_lr"
+      ],
+      [
+        "structured_chief_complaint_xgboost",
+        "structured_xgboost"
+      ],
+      [
+        "structured_chief_complaint_xgboost",
+        "structured_text_lr"
+      ]
+    ],
+    "notes": [
+      "Sensitivity target 0.80 explicitly confirmed by user before test evaluation.",
+      "Validation-only numerical audit: structured LR probabilities differ by at most 8.33e-17 across environments; machine-precision ties change AP by 4.83e-6 and AUROC by 2.45e-7. Preserve unrounded probabilities, original handoff metrics and local reproduction metrics separately; accept ranking-metric differences up to 1e-5 only when probability reproduction also passes. No model or threshold-rule tuning follows this numerical audit.",
+      "Evaluate existing training-fitted primary-outcome models; no refitting, tuning or recalibration.",
+      "S1/S3/S4 are P2 recommended sensitivity analyses; S2 complete cases is supplementary.",
+      "Bootstrap percentile intervals describe encounter-level performance with patient-cluster resampling, conditional on fixed fitted models and validation thresholds.",
+      "Secondary Stage >=2 model development is outside this evaluation of the seven supplied primary-outcome models."
+    ]
+  },
+  "environment": {
+    "python": "3.12.11",
+    "environment_name": "sml",
+    "packages": {
+      "numpy": "2.3.3",
+      "pandas": "2.3.3",
+      "scipy": "1.16.2",
+      "scikit-learn": "1.7.2",
+      "joblib": "1.5.2",
+      "xgboost": "3.1.2",
+      "matplotlib": "3.10.7",
+      "statsmodels": "0.14.6"
+    },
+    "thread_limits": {
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1"
+    }
+  },
+  "validation_encounters": 16932,
+  "validation_patients": 9913,
+  "model_names": [
+    "prevalence",
+    "age_gender_lr",
+    "structured_lr",
+    "structured_text_lr",
+    "age_gender_xgboost",
+    "structured_xgboost",
+    "structured_chief_complaint_xgboost"
+  ],
+  "thresholds": {
+    "prevalence": 0.0698805503754851,
+    "age_gender_lr": 0.06082484047396971,
+    "structured_lr": 0.05248053180619296,
+    "structured_text_lr": 0.05164372956587114,
+    "age_gender_xgboost": 0.06163614243268967,
+    "structured_xgboost": 0.049853287637233734,
+    "structured_chief_complaint_xgboost": 0.05069334805011749
+  },
+  "threshold_file_sha256": "1c04ffa6d48f460d8132a8786852bc25ce5e070ab1175f28aa5e1896c2ce5f49",
+  "source_sha256": {
+    "person5_evaluation/settings.json": "8b0f68678a17eb311d454a0ee51e60cd43ee2b8b38b6d9b511b6f8f5b852333c",
+    "person5_evaluation/common.py": "ca7c65256313b25f8a56973dcff0acf2077650d377df6b5d65104421820b4d4e",
+    "person5_evaluation/inference.py": "947dc211204473ce9a5cf79e0db840e9bee0259a9c1ac345e684e8cea551ef92",
+    "person5_evaluation/metrics.py": "f3663963c19ab90943cdf5bca59ce75b637de4758847958b8e532b4c3e9b079d",
+    "person5_evaluation/run_validation.py": "2c0fa19e815f554a69d4fa9f01df4c2dcf7815e9717351720f51a4e5c9a1a939",
+    "person5_evaluation/run_test_evaluation.py": "25b61f0a9e082835984ff6531e08778578fa2bcc1c06e4d178394805e018137c",
+    "person2_handoff/person2_split_preprocessing/aki_preprocessing.py": "66649293edba96a1bf3ecd3fb3d67f86d12603e643ffc489ed7e49677a3050b3",
+    "person2_handoff/person2_split_preprocessing/outputs/split_manifest.csv": "68b50c1add0af9aa15d3cefff6fe612d93aa27930cfa49bcddf778b20a879e6e",
+    "person1_handoff/predictor_columns.csv": "f4ad3dc9c2fbc4edc19a715d6e35a25cf83a6ace2deeddbb8fc0a853a07f7780",
+    "person3_handoff_v2_2026-10-16/person3_handoff/outputs/model_metadata.json": "fb9ad77b0bc405a6513206c0bd083a231cbfc7578d09a47afeafd4cbbdb08679",
+    "person4_handoff/person4_handoff/outputs/model_settings.json": "3e47266138ee63eedb78e0da59b1145942f8317ba4b6bed53eb0afbed8d7de58",
+    "person3_handoff_v2_2026-10-16/person3_handoff/outputs/models/prevalence.joblib": "07e79ac21902ff19579d31e053666cfe577f0f71b881f29b733d929399cf9f31",
+    "person3_handoff_v2_2026-10-16/person3_handoff/outputs/models/age_gender_lr.joblib": "d1566c5bd2a5bccfae5ec4f5a7b6e1953d8324fcc755cde0cedd98357f2d09b4",
+    "person3_handoff_v2_2026-10-16/person3_handoff/outputs/models/structured_lr.joblib": "a844b8ecd99c44c65aa6f67733100656b8c2f8bf646a729f81d2bd5e7c6968f5",
+    "person3_handoff_v2_2026-10-16/person3_handoff/outputs/models/structured_text_lr.joblib": "d509aff65fb9854c86ef9da1a693f3d915b05314e3a303b5e10f7cdfe3b66e52",
+    "person3_handoff_v2_2026-10-16/person3_handoff/outputs/validation_predictions.csv": "8da0ce81e62987364bee16e882d0ed886203017725954d46d9f269e559a656c8",
+    "person4_handoff/person4_handoff/outputs/models/age_gender_xgboost.joblib": "d98aae1bcbc324f9b14a7a13d3938abeffb1357d81f15e0fb5e4173e88481a2a",
+    "person4_handoff/person4_handoff/outputs/models/structured_xgboost.joblib": "8ebd09f670dfb266f40092c27a5d9427e6202ad1eef55455bb15d06bb44aeb06",
+    "person4_handoff/person4_handoff/outputs/models/structured_chief_complaint_xgboost.joblib": "0a10e300147497f0fe630cb64f49132400d8342ef2778dd8e44962c96140dbdc",
+    "person4_handoff/person4_handoff/outputs/validation_predictions.csv": "b7490546b7de0acfcb20708daf40b2fe28765bfdb636ea5837d3882214fb4859",
+    "person2_handoff/person2_split_preprocessing/outputs/preprocessors/lr_structured.joblib": "fe5ccb90159077786ea6da99f44097b1ac32ea2ce29366729acb3f6d2d98de10",
+    "person2_handoff/person2_split_preprocessing/outputs/preprocessors/lr_structured_feature_names.csv": "3b5a2894814640662208df43f37fae53b8e45bf60ebf1b944010a27d7ff1b78a",
+    "person2_handoff/person2_split_preprocessing/outputs/preprocessors/lr_text.joblib": "b2575bd28db0f590c732cda08d2a62eda43ac898f77579a65ae1c45f93066e1d",
+    "person2_handoff/person2_split_preprocessing/outputs/preprocessors/lr_text_feature_names.csv": "ff69d810d2d0d0d575c2a22735e3a6854fb080185544259d4bd8c58fc5b90778",
+    "person2_handoff/person2_split_preprocessing/outputs/preprocessors/tree_structured.joblib": "ad3247a58a28d7be906ea5b39c558f2d0da04f20582de8ea4ece6a6717c4d861",
+    "person2_handoff/person2_split_preprocessing/outputs/preprocessors/tree_structured_feature_names.csv": "332c3022e76e671775365c1e2f6228ae70ad19abb171acc956b17b2d017bd21d",
+    "person2_handoff/person2_split_preprocessing/outputs/preprocessors/tree_text.joblib": "30887cdecd8f87306e19116e6230606639b62a5f9e8d7208decc931e711c32fe",
+    "person2_handoff/person2_split_preprocessing/outputs/preprocessors/tree_text_feature_names.csv": "d5d212a40a7621976815cc1333f119498c1c5ad89d0025ebf8d06c977226be52",
+    "person2_handoff/person2_split_preprocessing/outputs/matrices/labels_validation.csv": "002715962bfc6ed94b74ac468e2611b5c9daf345ed0c2198f13a75f844837a47",
+    "person2_handoff/person2_split_preprocessing/outputs/matrices/lr_structured_validation.npy": "434a0799f9dd1ed953a9fe05385213d8a9022b10da903753d86575b1949c162f",
+    "person2_handoff/person2_split_preprocessing/outputs/matrices/lr_text_validation.npz": "dab9751632de81bc26388e9f0398e9f85f4e0edd644c5921f74f87201d80c50a",
+    "person2_handoff/person2_split_preprocessing/outputs/matrices/tree_structured_validation.npy": "6c79409816e57d52cde618828cf0b769bef57666a28da45b31bdbae0f6b5e900",
+    "person2_handoff/person2_split_preprocessing/outputs/matrices/tree_text_validation.npz": "d6dcb79322abdebac41174855b461a9a849d976ad4fa5f06409c0d40940b9b4d",
+    "person2_handoff/person2_split_preprocessing/outputs/matrices/X_raw_validation.csv": "a0d4e3e5efd800321997cdb3483af46bbb351dcd409f1085dd45c8af1646cc98"
+  },
+  "validation_passed": true,
+  "test_evaluation_started": false,
+  "scope": "Frozen existing primary-outcome models; conditional evaluation, no model/preprocessor fitting",
+  "sensitivity_target_authorization": "User explicitly confirmed Sensitivity >= 0.80 on 2026-10-19"
+}

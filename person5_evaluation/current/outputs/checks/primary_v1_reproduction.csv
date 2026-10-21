@@ -1,0 +1,8 @@
+﻿model_name,max_abs_probability_error,same_primary_model_hash,same_primary_cutoff,bootstrap_method_changed_to_stratified
+prevalence,0,True,True,True
+age_gender_lr,0,True,True,True
+structured_lr,0,True,True,True
+structured_text_lr,0,True,True,True
+age_gender_xgboost,0,True,True,True
+structured_xgboost,0,True,True,True
+structured_chief_complaint_xgboost,0,True,True,True

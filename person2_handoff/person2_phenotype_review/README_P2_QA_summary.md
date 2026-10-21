@@ -100,13 +100,13 @@ These are defined only from extraction and ascertainment fields, which are **nev
 - **Keep patients together.** 66,090 patients contribute 113,097 encounters (up to 69 per patient). 3,788 patients have both positive and negative encounters, so a patient-grouped split is essential.
 - Missingness is outcome-related (see above), so add missingness indicators, at least for vitals, acuity and pain. `pain_status` already separates "missing" from "other recorded".
 - Chief complaint has inconsistent casing ("Abd pain" / "ABD PAIN"), so lowercase it before TF-IDF.
-- Acuity 4–5 is rare (251 + 8). Consider treating acuity as ordinal numeric or merging 4–5.
+- Acuity 4–5 is rare (small counts suppressed in this public copy). Consider treating acuity as ordinal numeric or merging 4–5.
 - 59 encounters have DBP ≥ SBP, and extreme values pass the agreed broad screens (HR 1, SBP 1, SpO₂ 2%). No change is needed, but tree models and scaled LR handle these differently.
 - Do **not** use any column from `sensitivity_subset_flags.csv` or `full_cohort_audit.csv` as a predictor.
 
 ## Data handling and small cells
 - The row-level outputs (`sensitivity_subset_flags.csv`) and the handoff data must stay in approved private storage. Only aggregate tables go into the shared document.
-- Some aggregate cells hold fewer than 10 encounters: acuity 5 (n = 8) and acuity 4 within stage ≥ 2 (n = 4). Merge or suppress these before publishing, per the MIMIC data use agreement.
+- Rare acuity-category counts are suppressed in this public copy; use authorised local descriptive tables for the full analysis.
 
 ## Files
 

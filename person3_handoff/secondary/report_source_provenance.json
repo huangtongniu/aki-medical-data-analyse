@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-20",
+  "primary_source": "person5_evaluation; frozen primary test evaluation of 19 October 2026",
+  "primary_source_sha256": {
+    "outputs/tables/test_metrics.csv": "65bf009f91a4821fb85f9faa3a0e3ade6ca8a89373b7e8f5ff7730db7d546279",
+    "outputs/tables/test_confidence_intervals.csv": "50831284b0e7f3e1c9fe0a358f8c1edd3e325665b5bb276117c884fcffacc762",
+    "outputs/tables/test_paired_differences.csv": "b95e0b598aad74a07345cb9710738599af5df1725a8be3b0291723e546f154df",
+    "settings.json": "8b0f68678a17eb311d454a0ee51e60cd43ee2b8b38b6d9b511b6f8f5b852333c",
+    "outputs/checks/analysis_freeze.json": "882da3771a9f8b407867a90626e1a334511cf0bda9e76d639808c86167aefab8"
+  },
+  "secondary_source": "outputs/validation_metrics.csv; new Stage >=2 development only",
+  "secondary_source_sha256": "003108c12e993bfc36c5b1d8253c61ae56f5f7159827bc7003b5406eea07af1b",
+  "secondary_test_evaluated": false
+}

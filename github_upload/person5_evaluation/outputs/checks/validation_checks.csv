@@ -1,8 +1,0 @@
-﻿model_name,encounters,max_abs_probability_error,probability_atol,sample_ids_and_labels_match,unified_metrics_match_sklearn,handoff_csv_metrics_match_report,local_metrics_match_handoff_within_recorded_tolerances,local_minus_handoff_ap,local_minus_handoff_auroc,threshold_sensitivity_attained
-prevalence,16932,0,9.9999999999999995e-08,True,True,True,True,0,0,True
-age_gender_lr,16932,2.7755575615628914e-17,9.9999999999999995e-08,True,True,True,True,-1.3877787807814457e-17,0,True
-structured_lr,16932,8.3266726846886741e-17,9.9999999999999995e-08,True,True,True,True,4.827749575914142e-06,-2.4498388673244165e-07,True
-structured_text_lr,16932,1.1102230246251565e-16,9.9999999999999995e-08,True,True,True,True,0,0,True
-age_gender_xgboost,16932,1.0777244568993538e-08,9.9999999999999995e-08,True,True,True,True,0,1.1102230246251565e-16,True
-structured_xgboost,16932,1.1110496522803714e-08,9.9999999999999995e-08,True,True,True,True,0,0,True
-structured_chief_complaint_xgboost,16932,2.0016479473916604e-08,9.9999999999999995e-08,True,True,True,True,0,-1.1102230246251565e-16,True

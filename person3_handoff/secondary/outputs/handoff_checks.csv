@@ -1,0 +1,60 @@
+check,pass
+Preprocessing module is byte-identical to Person 2,True
+Exactly Person 1/2's 13 permitted predictors,True
+"Manifest covers 113,097 encounters",True
+"Manifest covers 66,090 patients",True
+Unique manifest stay_id,True
+Only the frozen three partition names,True
+Zero patient overlap across all partitions,True
+Shared structured feature names and 27 columns,True
+Preprocessor accepts only the permitted predictors,True
+No chief-complaint text features,True
+"Shared lr_text feature names and 2,799 columns",True
+lr_text preserves the exact 27-column structured prefix,True
+Text preprocessor accepts exactly the permitted raw inputs,True
+train: IDs and row order match the frozen manifest,True
+train: raw predictors align with labels,True
+train: raw table has exactly the permitted schema,True
+train: binary Stage >=2 labels,True
+train: Stage >=2 is nested within primary AKI,True
+train: Stage 1 encounters are retained as secondary negatives,True
+"train: encounter, patient and positive counts reconcile",True
+train: finite matrix with expected shape,True
+train: gender coding supports the predefined binary baseline,True
+train: saved preprocessor reproduces every matrix value,True
+train: finite sparse lr_text matrix with expected shape,True
+train: lr_text matrix pattern and values reproduce within 1e-14,True
+train: text model structured inputs equal structured LR inputs,True
+validation: IDs and row order match the frozen manifest,True
+validation: raw predictors align with labels,True
+validation: raw table has exactly the permitted schema,True
+validation: binary Stage >=2 labels,True
+validation: Stage >=2 is nested within primary AKI,True
+validation: Stage 1 encounters are retained as secondary negatives,True
+"validation: encounter, patient and positive counts reconcile",True
+validation: finite matrix with expected shape,True
+validation: gender coding supports the predefined binary baseline,True
+validation: saved preprocessor reproduces every matrix value,True
+validation: finite sparse lr_text matrix with expected shape,True
+validation: lr_text matrix pattern and values reproduce within 1e-14,True
+validation: text model structured inputs equal structured LR inputs,True
+Imputation medians equal training medians,True
+Scaler centres equal imputed training means,True
+One-hot categories equal training categories,True
+TF-IDF vocabulary and IDF reproduce a training-only refit,True
+"Frozen TF-IDF vocabulary contains 2,772 terms",True
+"LR and XGBoost shared text settings, vocabulary and IDF are identical",True
+prevalence: raw-input pipeline matches matrix predictions,True
+prevalence: reloaded pipeline reproduces validation probabilities exactly,True
+age_gender_lr: raw-input pipeline matches matrix predictions,True
+age_gender_lr: reloaded pipeline reproduces validation probabilities exactly,True
+structured_lr: raw-input pipeline matches matrix predictions,True
+structured_lr: reloaded pipeline reproduces validation probabilities exactly,True
+structured_text_lr: raw-input pipeline matches matrix predictions,True
+structured_text_lr: reloaded pipeline reproduces validation probabilities exactly,True
+One prediction per validation encounter/model/target,True
+All four baselines evaluate the same validation encounters,True
+Only validation predictions for the secondary Stage >=2 target,True
+Constant baseline is exactly training encounter prevalence,True
+Constant AP equals validation prevalence,True
+Prediction CSV preserves probabilities on round-trip read,True

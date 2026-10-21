@@ -1,0 +1,14 @@
+model_name,penalty,C,average_precision,auroc,brier_score,n_iter,fit_seconds,converged,selected,selection_rule
+age_gender_lr,none,,0.022211334319762813,0.5485854551460914,0.019272244781878462,14,0.023806374985724688,True,True,Fixed two-predictor baseline; no tuning
+structured_lr,l2,0.001,0.03435634344541993,0.6114663371124603,0.019217256932112323,19,0.06186337489634752,True,False,Max validation AP; ties within 1e-12 choose smaller C
+structured_lr,l2,0.01,0.034060263777027776,0.6209109887042292,0.019198748234534668,43,0.13762341695837677,True,False,Max validation AP; ties within 1e-12 choose smaller C
+structured_lr,l2,0.1,0.03985477602249662,0.625703057114588,0.019165151255043394,95,0.28013366600498557,True,False,Max validation AP; ties within 1e-12 choose smaller C
+structured_lr,l2,1.0,0.04243622278481534,0.6262128747218211,0.019139463134937744,217,0.6557923750951886,True,False,Max validation AP; ties within 1e-12 choose smaller C
+structured_lr,l2,10.0,0.04298104234833204,0.6263077644787386,0.019135972680385367,268,0.7977256670128554,True,False,Max validation AP; ties within 1e-12 choose smaller C
+structured_lr,l2,100.0,0.04299612274645448,0.6263152724385329,0.019135610909427576,227,0.6741772920358926,True,True,Max validation AP; ties within 1e-12 choose smaller C
+structured_text_lr,l2,0.001,0.03539698284762279,0.6170673655763119,0.01921273722483576,19,0.06651820917613804,True,False,Max validation AP; ties within 1e-12 choose smaller C
+structured_text_lr,l2,0.01,0.037356715210250906,0.6404741086649635,0.019164826022032677,48,0.15431287488900125,True,False,Max validation AP; ties within 1e-12 choose smaller C
+structured_text_lr,l2,0.1,0.05343584652314072,0.6645750214338684,0.019031488595929923,144,0.44503091694787145,True,False,Max validation AP; ties within 1e-12 choose smaller C
+structured_text_lr,l2,1.0,0.0721013672307882,0.6658976887605118,0.018850269743168606,428,1.3075575828552246,True,True,Max validation AP; ties within 1e-12 choose smaller C
+structured_text_lr,l2,10.0,0.07135964360235314,0.6441157405372118,0.01898864864255198,1204,3.6900380831211805,True,False,Max validation AP; ties within 1e-12 choose smaller C
+structured_text_lr,l2,100.0,0.06465237643981346,0.6251383318977752,0.01933868275035978,3190,9.789481583982706,True,False,Max validation AP; ties within 1e-12 choose smaller C

@@ -1,0 +1,15 @@
+﻿target,model_name,max_abs_probability_difference,identifiers_labels_and_target_match,reported_metrics_reproduced,independent_metrics_match,largest_sensitivity_cutoff_verified
+aki_label,prevalence,0,True,True,True,True
+aki_label,age_gender_lr,2.7755575615628914e-17,True,True,True,True
+aki_label,structured_lr,8.3266726846886741e-17,True,True,True,True
+aki_label,structured_text_lr,1.1102230246251565e-16,True,True,True,True
+aki_label,age_gender_xgboost,1.0777244568993538e-08,True,True,True,True
+aki_label,structured_xgboost,1.1110496522803714e-08,True,True,True,True
+aki_label,structured_chief_complaint_xgboost,2.0016479473916604e-08,True,True,True,True
+aki_stage2_label,prevalence,0,True,True,True,True
+aki_stage2_label,age_gender_lr,6.9388939039072284e-18,True,True,True,True
+aki_stage2_label,structured_lr,8.3266726846886741e-17,True,True,True,True
+aki_stage2_label,structured_text_lr,3.3306690738754696e-16,True,True,True,True
+aki_stage2_label,age_gender_xgboost,7.3605060588177729e-10,True,True,True,True
+aki_stage2_label,structured_xgboost,6.9824218629221946e-09,True,True,True,True
+aki_stage2_label,structured_chief_complaint_xgboost,2.9292297365479669e-08,True,True,True,True

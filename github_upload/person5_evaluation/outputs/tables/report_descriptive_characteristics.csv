@@ -1,9 +1,0 @@
-﻿characteristic,operational_negative,primary_positive,SMD
-"Age, years: median [IQR]",66.0 [52.0–78.0],66.0 [55.0–78.0],0.069
-Gender: M,"52,223 (49.6%)","4,401 (55.9%)",0.127
-Arrival transport: AMBULANCE,"53,091 (50.5%)","4,515 (57.4%)",0.140
-"Temperature, °F: missing","10,387 (9.9%)","1,522 (19.3%)",0.271
-"Systolic BP, mmHg: median [IQR]",132.0 [117.0–149.0],127.0 [110.0–148.0],-0.139
-"Diastolic BP, mmHg: median [IQR]",74.0 [64.0–85.0],71.0 [60.0–83.0],-0.166
-Triage acuity (ESI): 1,"12,577 (12.0%)","1,510 (19.2%)",0.201
-All six vital signs missing: Yes,"7,630 (7.3%)","1,193 (15.2%)",0.253

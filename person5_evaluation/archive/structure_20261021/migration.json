@@ -1,0 +1,90 @@
+{
+  "created_at_utc": "2026-10-21T06:12:06.620957+00:00",
+  "authorization": "User requested exactly five teammate folders and updated paths/work summaries on 2026-10-21.",
+  "before_inventory_files": 399,
+  "path_mappings": [
+    [
+      "person5_evaluation_v2/inputs/person3_primary/person3_handoff",
+      "person3_handoff/primary"
+    ],
+    [
+      "person3_stage2_handoff/person3_stage2_handoff",
+      "person3_handoff/secondary"
+    ],
+    [
+      "person3_handoff_v2_2026-10-16/person3_handoff",
+      "person3_handoff/primary"
+    ],
+    [
+      "person5_evaluation_v2",
+      "person5_evaluation/current"
+    ],
+    [
+      "person5_evaluation",
+      "person5_evaluation/archive_v1"
+    ],
+    [
+      "github_upload",
+      "person5_evaluation/archive/github_upload_20261021"
+    ],
+    [
+      "person2_handoff.zip",
+      "person2_handoff/archives/person2_handoff.zip"
+    ],
+    [
+      "person3_handoff_v2_2026-10-16.zip",
+      "person3_handoff/archives/person3_handoff_v2_2026-10-16.zip"
+    ],
+    [
+      "person3_stage2_handoff.zip",
+      "person3_handoff/archives/person3_stage2_handoff.zip"
+    ],
+    [
+      "person4_handoff.zip",
+      "person4_handoff/archives/person4_handoff.zip"
+    ],
+    [
+      "person5_evaluation.zip",
+      "person5_evaluation/archive/person5_evaluation.zip"
+    ],
+    [
+      "TEAM_CONTRIBUTIONS_AND_RESULTS_EN.md",
+      "person5_evaluation/archive/TEAM_CONTRIBUTIONS_AND_RESULTS_EN_20261019.md"
+    ],
+    [
+      "队友工作与成果梳理.md",
+      "person5_evaluation/archive/structure_20261021/before/队友工作与成果梳理.md"
+    ]
+  ],
+  "code_amendments": {
+    "person5_evaluation_v2/common.py": {
+      "before_sha256": "8ede1d1f36fab1291090499279da80ba8ccd908df116928f76f2fff87f4348c9",
+      "after_sha256": "d64719672c4e382ec2a54ff9e4c4595401deccd900d0515cd66615f3e956bf44",
+      "original_copy": "person5_evaluation/archive/structure_20261021/before/person5_evaluation_v2/common.py",
+      "current_file": "person5_evaluation/current/common.py",
+      "reason": "Project path relocation and provenance-path resolution only; no statistical/model/threshold changes."
+    },
+    "person5_evaluation_v2/evaluate.py": {
+      "before_sha256": "fa8cb5aea6092f6b4f42afd1ca7fb3037ce379fd20bc56d209db2e94690f7ee3",
+      "after_sha256": "6a82906bb3ae80c0efdb67ce5b04bd1cd978719e12740259058d424f059283a5",
+      "original_copy": "person5_evaluation/archive/structure_20261021/before/person5_evaluation_v2/evaluate.py",
+      "current_file": "person5_evaluation/current/evaluate.py",
+      "reason": "Project path relocation and provenance-path resolution only; no statistical/model/threshold changes."
+    }
+  },
+  "scope": "Directory relocation and path adaptation only; preserve fitted models, split, thresholds, predictions, numeric metrics and original analysis freezes.",
+  "unchanged_statistical_functions": [
+    "core_metrics",
+    "validate",
+    "patient_layout",
+    "draw_multiplicities",
+    "bootstrap_scope"
+  ],
+  "path_adapter_sha256": {
+    "person5_evaluation/current/layout.py": "4c2160d881a33ba9f2739ff74cfa8faa75579511a352efb9ee22a04ba5a2f21b",
+    "person5_evaluation/current/verify_outputs.py": "34fe6690487ddf24740b5f4cad7856e6597e06ffab385c821e9e215399ba0472",
+    "person5_evaluation/current/build_notebook.py": "f73ba13c3c3509ec4b2fdb322bd98755b6fdcbda3ca0829e13604989c6025d60",
+    "person5_evaluation/run_all.py": "71218a99da8ea3623a2ab706b3db9780388860b37a62f9d7b7758f0a83942f3f",
+    "person5_evaluation/execute_notebook.py": "b40979d24807bb72e1b1575bc5e7389bb79b5b175fa15e5d2ef85b089a4aa4e7"
+  }
+}

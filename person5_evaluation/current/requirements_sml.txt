@@ -1,0 +1,17 @@
+# Recorded environment; no packages were installed or upgraded.
+# Python 3.12.11
+numpy==2.3.3
+pandas==2.3.3
+scipy==1.16.2
+scikit-learn==1.7.2
+joblib==1.5.2
+xgboost==3.1.2
+matplotlib==3.10.7
+statsmodels==0.14.6
+
+# Notebook execution dependencies already present in sml
+nbformat==5.11.1
+jupyter_client==8.6.3
+ipykernel==7.0.1
+ipython==9.6.0
+traitlets==5.14.3

@@ -1,5 +1,0 @@
-﻿partition,patients,patients %,encounters,encounters %,primary positives,primary prevalence,stage ≥2 positives,stage ≥2 prevalence,age median,all six vitals missing,max encounters/patient
-train,46263,70.0%,79364,70.2%,5546,6.99%,1589,2.00%,66.0,7.8%,69
-validation,9913,15.0%,16932,15.0%,1165,6.88%,333,1.97%,66.0,7.9%,52
-test,9914,15.0%,16801,14.9%,1155,6.87%,332,1.98%,66.0,7.7%,36
-all,66090,100.0%,113097,100.0%,7866,6.96%,2254,1.99%,66.0,7.8%,69

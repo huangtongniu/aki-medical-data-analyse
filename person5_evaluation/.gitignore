@@ -1,2 +1,5 @@
 __pycache__/
-outputs/
+.ipynb_checkpoints/
+current/outputs/
+archive_v1/outputs/
+archive/
