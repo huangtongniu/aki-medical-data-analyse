@@ -1,6 +1,6 @@
 {
   "repository": "huangtongniu/aki-medical-data-analyse",
-  "publication_date": "2026-10-21",
+  "publication_date": "2026-10-22",
   "official_model_decision": "retain original frozen models and thresholds locally",
   "scope": "source code, sanitized notebooks, aggregate evaluation tables/figures and documentation",
   "excludes": [
@@ -38,13 +38,23 @@
     ],
     "person5_evaluation/current/P5_primary_secondary_evaluation.ipynb": [
       "Remove all execution outputs, execution counts, cell metadata and attachments in public copy"
+    ],
+    "person5_evaluation/final_submission/build_final_notebook.py": [
+      "Use empty BigQuery project default in public copy"
+    ],
+    "person5_evaluation/final_submission/check_bigquery_access.py": [
+      "Use empty BigQuery project default in public copy"
+    ],
+    "person5_evaluation/final_submission/Final_AKI_End_to_End.ipynb": [
+      "Clear execution outputs/counts and attachments; retain tags required by helper scripts",
+      "Use empty BigQuery project default; preserve executed local notebook"
     ]
   },
   "files": {
-    ".gitignore": "9fa869e3f7396c04894f11be905b0f8a3d6af2e1625f727302a5b88a8f72eecf",
-    "GITHUB_PUBLICATION.md": "3f1e97c5bfa1c568ae8da8aa065cad94b50a80fe1efd1ada26c5d664a74acc59",
+    ".gitignore": "4b010b4d2d43e22ef5e326429960ac90b01057e5497eb742c969b9b48d266050",
+    "GITHUB_PUBLICATION.md": "af5fa230ea1690b620701e188306a7f936d03f18f5f1fc3a8709c0a02bfcf34f",
     "Project Method.docx": "5120912955d97b646dd4afa65f0c7858482f067b5c125f7b9f6c36fe88abd1e8",
-    "README.md": "da192bad8e268d65d5f83b901a19ca76fac725910c3d05e600cde77dcbe1ab74",
+    "README.md": "6c812e4a7c1a66e37a6a669b3bb4e429098c12f3e96aac7da7f3346791070f49",
     "person1_handoff/ML_for_health_Group_Project.ipynb": "2a6531fd4e461f793732853722e24f70eab3b23d2d7c2c8324b04fb96a057173",
     "person1_handoff/README.txt": "594ae2f91967e08f502af946beb8e28627e91f7900ec9a7f01d1c99922de7c59",
     "person1_handoff/outcome_counts.csv": "eefe0a5b5f66e2fcb97f4cdb2241158ff909b0cf2bfedc8210245a862b3df873",
@@ -129,7 +139,7 @@
     "person4_handoff/person4_handoff/software_versions.json": "75c72fd5e703d04d78db6e44663954af89a2d8eb90ead8c9a33deeb820fcff87",
     "person4_handoff/工作说明.md": "d4fcd9f8e2777c1fa01868356b35524ce74328c1a4d8ee0beddc87d061adf679",
     "person5_evaluation/.gitignore": "35c4c481bec1661f2b61800c969d69afff1113d061feaa8f94b2ae786d6f3ee6",
-    "person5_evaluation/README.md": "cf43b9fe8b4b888ec705ffcb4166ff63e04c5b9ebbfb85f55a36c5ed80774a90",
+    "person5_evaluation/README.md": "6a2abc42dbc40e31989e4c1dac31f1f10c502b75503cc857eda6e266ade30ec3",
     "person5_evaluation/archive/structure_20261021/before/person5_evaluation_v2/common.py": "8ede1d1f36fab1291090499279da80ba8ccd908df116928f76f2fff87f4348c9",
     "person5_evaluation/archive/structure_20261021/before/person5_evaluation_v2/evaluate.py": "fa8cb5aea6092f6b4f42afd1ca7fb3037ce379fd20bc56d209db2e94690f7ee3",
     "person5_evaluation/archive/structure_20261021/migration.json": "efa87d70b07dbe3fcd0ab7939026396efc4f9e1241786f28c0df2216ce7432df",
@@ -228,9 +238,44 @@
     "person5_evaluation/current/verify_outputs.py": "34fe6690487ddf24740b5f4cad7856e6597e06ffab385c821e9e215399ba0472",
     "person5_evaluation/execute_notebook.py": "b40979d24807bb72e1b1575bc5e7389bb79b5b175fa15e5d2ef85b089a4aa4e7",
     "person5_evaluation/run_all.py": "71218a99da8ea3623a2ab706b3db9780388860b37a62f9d7b7758f0a83942f3f",
-    "person5_evaluation/工作说明.md": "b550305fddffdebee7fb2d91b34f5c3bcd2ad1f1886c70d1e8dc610c8ef377e6",
+    "person5_evaluation/工作说明.md": "7891db6fb7ab26cfe67c74593a9a34aae875769b438e5c8312f722bd948563ab",
     "person5_evaluation/探索实验思路与结论_20261021.md": "6549ed353206abdb4253f8bbf041e3f9cc3757c78ace0f4106cb6ede7c7dbc89",
     "what should I do.md": "cf24fb8c6e21779b675352061735953ae38b2703612e46030dad9b808ce70df8",
-    "队友工作与成果梳理.md": "77385c970c6dceb2b2e5b79a80158fee3c22e5a60691e3fcdf2123249a760ab1"
+    "队友工作与成果梳理.md": "77385c970c6dceb2b2e5b79a80158fee3c22e5a60691e3fcdf2123249a760ab1",
+    "person5_evaluation/final_submission/.gitignore": "bf5848a4c9317157079b2744bfdf0e8ffd316077ad5aa57a4f64ec27edbf226f",
+    "person5_evaluation/final_submission/build_final_notebook.py": "b991570513e3cb80863ea92635c0c60d129ad6bb130f6f6fdd822e7a17e51445",
+    "person5_evaluation/final_submission/check_bigquery_access.py": "8af6db00e969663d6cfc82e7438b0f91b1adeaefbb5fa1b0d042744afefee8d0",
+    "person5_evaluation/final_submission/check_synthetic_pipeline.py": "c987ef31b7d04c51aa75549bac53bd16ae5098fd621f0ae43082b222ce221cbe",
+    "person5_evaluation/final_submission/execute_final_notebook.py": "7178672f50a1ec3ea3b62ff41e0b148f2f740205df7e693adbe100f816947c7b",
+    "person5_evaluation/final_submission/Final_AKI_End_to_End.ipynb": "833a2785123c13290e073cc2ab6c3da014ab6d0deda6c55fc6720896cba91a47",
+    "person5_evaluation/final_submission/published_results/figures/01_test_pr_roc_both_outcomes.png": "c1cee7ae41907c386bec4015d54d48ce528b5c04c6b7352422ebe49565c135d8",
+    "person5_evaluation/final_submission/published_results/figures/02_test_calibration_both_outcomes.png": "f9d649cd5a36054efca7ed2d64be228c7439a75a1b1ba3040df3f6592e78cb86",
+    "person5_evaluation/final_submission/published_results/figures/03_cohort_flow.png": "a9ecbbb16bb8b63f6809cc0049bb44f7f7cb32284e67d32d18a8d8f816e0b306",
+    "person5_evaluation/final_submission/published_results/figures/04_feature_associations.png": "13c425736c2480bb402ba0a832d6d3438b8754c5b20f9c8b29e6a1dbfc12f651",
+    "person5_evaluation/final_submission/published_results/figures/05_sensitivity_ap.png": "1a12728e4aa1e480c9826f5d820e22a007450b7c05792b7654e12cf163dbd19c",
+    "person5_evaluation/final_submission/published_results/figures/06_paired_ap_differences.png": "6b907bded51cff4ef9bf5635c2561aa1287e2db3318840fa18260391b8c00e16",
+    "person5_evaluation/final_submission/published_results/README.md": "9adf4ac7e4b8373aea52c15f57d793b8fd0195960c2521400ed3a865cdf58c40",
+    "person5_evaluation/final_submission/published_results/tables/all_confidence_intervals.csv": "cf93ee87e2218ec87abaf2b096549e5cc99e4c585929865f45eee8f196b478f6",
+    "person5_evaluation/final_submission/published_results/tables/all_metrics.csv": "9ff82b949483ddf29d06468e60c32ef83e70041b51f48fbad9b7c2f94980c099",
+    "person5_evaluation/final_submission/published_results/tables/all_paired_differences.csv": "80e8d405950aa77718c781b9f9a40b7465ca32152c198815cad48a329a0b02c6",
+    "person5_evaluation/final_submission/published_results/tables/calibration_bins.csv": "07df010c54143b63d874afbb70800db237592fe76b38b0d0b37886eba6158339",
+    "person5_evaluation/final_submission/published_results/tables/cohort_flow.csv": "09ac68336f881db75909c3c7f9975147b52a8cf0fc28bfccc380d8ce021db67e",
+    "person5_evaluation/final_submission/published_results/tables/primary_secondary_comparison.csv": "744d2459afced7ea6076441c991b4f39087411991cabd857883b16f61a5f61ff",
+    "person5_evaluation/final_submission/published_results/tables/sensitivity_metrics.csv": "20d2cd5e495275c3e1b78fcda1e609812c327ae14ae80722aeaca35b926ad0a1",
+    "person5_evaluation/final_submission/published_results/tables/split_summary.csv": "833172e6e7fb29950501dcf5446fdaa90253395409ab4f63696f124d2d206f01",
+    "person5_evaluation/final_submission/published_results/tables/test_metrics.csv": "659923cafe9f0814d9dc17101ff5320db6c8b4d7e43116827dd631923872aab5",
+    "person5_evaluation/final_submission/published_results/tables/validation_metrics_and_thresholds.csv": "d999867c636db21b29207b4e5fd343281357d17ea505c991b5957df1f8cc49b7",
+    "person5_evaluation/final_submission/published_results/tables/validation_model_search.csv": "adf071182540e8179807437dd86574daeed55c9e5666265c2048919030a6cf17",
+    "person5_evaluation/final_submission/README.md": "f63076fae2c0af61e5049c1b79ae300c78f27484832672ae70556c0f71ea2c3f",
+    "person5_evaluation/final_submission/requirements-sml.txt": "76c066f45c512506e1d23c6fe608d02d1298d3e7e90bb91f0f1c2ec6b90f1bab",
+    "person5_evaluation/final_submission/source_manifest.json": "28303258be94ac215d58391a9368b286bbd6df10f0958c54aea9b22a3d5c21d5",
+    "person5_evaluation/final_submission/verification_summary.json": "b5e38d41b1a9f4e9afe751ec756e2ab6e4bf4bef60ffffa194f129ca17743110"
+  },
+  "integrated_notebook": {
+    "path": "person5_evaluation/final_submission/Final_AKI_End_to_End.ipynb",
+    "raw_data_version": "ED 2.2 / HOSP 2.2",
+    "completed_run": "20261021T092359_830334Z",
+    "results_separate_from_frozen_evaluation": true,
+    "public_outputs": "aggregate tables and PNG figures only"
   }
 }

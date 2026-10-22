@@ -14,6 +14,8 @@ GitHub 发布范围见 [公开版本说明](GITHUB_PUBLICATION.md)。原冻结�
 
 当前结果入口：[P5 Notebook](person5_evaluation/current/P5_primary_secondary_evaluation.ipynb)、[中文结果解读](person5_evaluation/current/P5_新版结果解读_团队讨论.md)、[十四模型对比表](person5_evaluation/current/outputs/tables/combined_model_comparison.csv)。
 
+从原始数据库开始的提交入口：[五人整合 Notebook](person5_evaluation/final_submission/Final_AKI_End_to_End.ipynb)。该版本重新提取、训练和评估两种结局，不读取现有 CSV 或模型；使用方式与真实数据 Run All 状态见 [整合说明](person5_evaluation/final_submission/README.md)。
+
 激活已有 `sml` 环境，在项目根目录执行：
 
 ```powershell

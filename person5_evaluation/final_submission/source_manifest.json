@@ -1,0 +1,38 @@
+[
+  {
+    "contributor_source": "person1_handoff/ML_for_health_Group_Project.ipynb",
+    "sha256": "1dc465ee5ef7ea11a13ecd2a6610f7df1475caf40ffb4e62455ba8e4fafb0216"
+  },
+  {
+    "contributor_source": "person2_handoff/person2_phenotype_review/P2_phenotype_review.ipynb",
+    "sha256": "0e73edaad064943ccda601a18d32ce18fa2fd301b09078874c18dce6ec5be4dc"
+  },
+  {
+    "contributor_source": "person2_handoff/person2_split_preprocessing/aki_preprocessing.py",
+    "sha256": "66649293edba96a1bf3ecd3fb3d67f86d12603e643ffc489ed7e49677a3050b3"
+  },
+  {
+    "contributor_source": "person2_handoff/person2_split_preprocessing/P2_split_preprocessing.ipynb",
+    "sha256": "e24e95750687673d9ae5e62a4dc08e89acd7b832c3de8cae7d53c46849184674"
+  },
+  {
+    "contributor_source": "person3_handoff/primary/person3_baselines.py",
+    "sha256": "9a36f362337dea0f7c64623ec7f23a93aa184337737302555b908759cf199f9c"
+  },
+  {
+    "contributor_source": "person3_handoff/secondary/stage2_baselines.py",
+    "sha256": "4264dd84451963a01921d2598fb1f8b2761715c0a0e45371ef6c6b49288857ba"
+  },
+  {
+    "contributor_source": "person4_handoff/legacy_primary_training/p4_xgboost.py",
+    "sha256": "d77970609c6949490a17202bf18d9c9fd87627a9b42b5562f76817e04adcfd4e"
+  },
+  {
+    "contributor_source": "person4_handoff/person4_handoff/outputs/stage2_model_settings.json",
+    "sha256": "d3acb4f9e79f39e575dca9426fbefb7353a96cd78f912d3faaa2491770d43239"
+  },
+  {
+    "contributor_source": "person5_evaluation/current/metrics.py",
+    "sha256": "f3663963c19ab90943cdf5bca59ce75b637de4758847958b8e532b4c3e9b079d"
+  }
+]

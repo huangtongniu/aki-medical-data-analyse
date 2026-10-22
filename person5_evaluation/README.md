@@ -6,6 +6,7 @@
 
 | 目录 | 用途 |
 | --- | --- |
+| [final_submission](final_submission) | 从 BigQuery 原始表开始的五人整合单个 Notebook；覆盖两种结局，重新训练和评估；运行状态见该目录说明 |
 | [current](current) | 两种结局十四模型评估、Notebook、结果表、图及中文解释 |
 | [archive_v1](archive_v1) | 原主结局七模型评估，保留原文件内容和冻结记录 |
 | [archive/github_upload_20261021](archive/github_upload_20261021) | 整理前的旧发布副本，保留原发布清单和旧源码；不是当前发布包 |

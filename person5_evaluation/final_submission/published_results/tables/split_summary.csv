@@ -1,0 +1,4 @@
+﻿partition,encounters,patients,primary_positive,secondary_positive
+train,79364,46263,5546,1589
+validation,16932,9913,1165,333
+test,16801,9914,1155,332

@@ -1,0 +1,8 @@
+# Live clinical data, local run outputs and synthetic engineering artifacts.
+final_submission_runs/
+verification/synthetic_only/
+verification/ipython/
+verification/*.executed.ipynb
+verification/
+*.log
+__pycache__/

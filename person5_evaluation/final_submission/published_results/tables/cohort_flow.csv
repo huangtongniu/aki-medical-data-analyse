@@ -1,0 +1,7 @@
+﻿step,encounters,patients
+All ED encounters,425087,205504
+Hospital-admitted ED encounters,203016,107391
+Adults,203016,107391
+Valid encounter times,202974,107367
+After prior ESKD/dialysis exclusions,195340,106516
+Labelled modelling population,113097,66090

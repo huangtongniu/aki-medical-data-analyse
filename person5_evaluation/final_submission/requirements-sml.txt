@@ -1,0 +1,18 @@
+# Reference versions already present in sml; no installation was performed.
+# Python 3.12.11
+numpy==2.3.3
+pandas==2.3.3
+scipy==1.16.2
+scikit-learn==1.7.2
+xgboost==3.1.2
+matplotlib==3.10.7
+google-cloud-bigquery==3.45.1
+pandas-gbq==0.35.2
+google-auth==2.43.0
+pydata-google-auth==1.9.1
+pyarrow==25.0.1
+db-dtypes==1.7.1
+IPython==9.6.0
+nbformat==5.11.1
+threadpoolctl==3.6.0
+ipykernel==7.0.1
